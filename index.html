@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TIL — The New Knowledge</title>
+  <meta name="description" content="Ghi chép về behavior design, tâm lý học hành vi, và sản phẩm.">
+  <meta property="og:title" content="TIL — The New Knowledge">
+  <meta property="og:description" content="Ghi chép về behavior design, tâm lý học hành vi, và sản phẩm.">
+  <meta property="og:type" content="website">
+  <style>
+    :root {
+      --paper: #f7f4ee;
+      --ink: #1f2523;
+      --muted: #68706c;
+      --line: #d9d0c3;
+      --soft: #ebe4d8;
+      --accent: #0f766e;
+      --accent-2: #9f4f2f;
+      --panel: #fffaf2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      background:
+        linear-gradient(90deg, rgba(31,37,35,.035) 1px, transparent 1px) 0 0 / 34px 34px,
+        var(--paper);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-size: 2.4rem;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    .tag {
+      display: inline-block;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .sub {
+      color: var(--muted);
+      font-style: italic;
+      margin: 0;
+    }
+    ul.posts {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul.posts li {
+      border-bottom: 1px solid var(--line);
+      padding: 24px 0;
+    }
+    ul.posts li:last-child { border-bottom: none; }
+    ul.posts a {
+      color: var(--ink);
+      text-decoration: none;
+      display: block;
+    }
+    ul.posts a:hover h2 { color: var(--accent); }
+    ul.posts h2 {
+      font-size: 1.4rem;
+      margin: 0 0 6px;
+      letter-spacing: -0.01em;
+      transition: color 0.15s;
+    }
+    ul.posts p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="tag">Today I Learned</span>
+      <h1>The New Knowledge</h1>
+      <p class="sub">Ghi chép về behavior design, tâm lý học hành vi, và sản phẩm.</p>
+    </header>
+
+    <ul class="posts">
+      <li>
+        <a href="/behavior-design-human-philosophy-saas">
+          <h2>Behavior Design &amp; Human Philosophy cho SaaS Product</h2>
+          <p>Cách áp dụng nguyên lý hành vi và triết học con người vào thiết kế sản phẩm SaaS.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/behavior-frameworks-learning-application">
+          <h2>5 Khung Tư Duy Hành Vi Để Học Và Áp Dụng</h2>
+          <p>Năm khung tư duy nền tảng giúp hiểu và can thiệp vào hành vi người dùng.</p>
+        </a>
+      </li>
+    </ul>
+
+    <footer>
+      © <span id="y"></span> · built with html + vercel
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

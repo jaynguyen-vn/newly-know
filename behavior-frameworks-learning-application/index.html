@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5 Khung Tư Duy Hành Vi Để Học Và Áp Dụng</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f1e8;
+      --paper: #fffdf8;
+      --ink: #1f2423;
+      --muted: #66706b;
+      --line: #d9d0c3;
+      --accent: #0f766e;
+      --accent-dark: #0a514c;
+      --accent-soft: #e4f0ed;
+      --warm: #f7e6d0;
+      --warm-line: #e4c59d;
+      --danger: #9b3d2e;
+      --code: #262c2b;
+      --shadow: rgba(37, 31, 22, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        linear-gradient(90deg, rgba(15, 118, 110, 0.055) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(15, 118, 110, 0.05) 1px, transparent 1px),
+        var(--bg);
+      background-size: 36px 36px;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.68;
+    }
+
+    .shell {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 20px 72px;
+    }
+
+    .toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 0;
+      background: color-mix(in srgb, var(--bg) 88%, transparent);
+      backdrop-filter: blur(10px);
+    }
+
+    .toolbar p,
+    .eyebrow,
+    .lead,
+    .toc,
+    .meta,
+    .principle,
+    .card,
+    .checklist,
+    .matrix,
+    .caption,
+    button {
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .toolbar p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    button {
+      border: 1px solid var(--accent-dark);
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 10px 14px;
+      white-space: nowrap;
+    }
+
+    article {
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 24px 68px var(--shadow);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.8fr);
+      gap: 34px;
+      padding: 56px 56px 40px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(135deg, #fffdf8 0%, #f6ead7 100%);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0 0 18px;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 850px;
+      font-size: clamp(36px, 6vw, 66px);
+    }
+
+    h2 {
+      margin-top: 54px;
+      font-size: clamp(28px, 4vw, 40px);
+    }
+
+    h3 {
+      margin-top: 30px;
+      color: var(--accent-dark);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 20px;
+    }
+
+    p {
+      margin: 12px 0;
+    }
+
+    .lead {
+      max-width: 760px;
+      color: #3c4541;
+      font-size: 20px;
+      line-height: 1.62;
+    }
+
+    .meta {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .meta-box {
+      border: 1px solid var(--warm-line);
+      border-radius: 8px;
+      background: rgba(255, 253, 248, 0.72);
+      padding: 18px;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: 42px;
+      padding: 0 56px 58px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 72px;
+      align-self: start;
+      margin-top: 48px;
+      padding-left: 18px;
+      border-left: 3px solid var(--accent);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .toc strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--ink);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .toc a {
+      display: block;
+      padding: 5px 0;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      min-width: 0;
+      max-width: 760px;
+    }
+
+    section {
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    ul,
+    ol {
+      padding-left: 24px;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    code,
+    pre {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    }
+
+    pre {
+      overflow-x: auto;
+      margin: 18px 0;
+      padding: 18px;
+      border-radius: 8px;
+      background: var(--code);
+      color: #fff7eb;
+      font-size: 14px;
+      line-height: 1.58;
+    }
+
+    .principle {
+      margin: 24px 0;
+      padding: 22px;
+      border-left: 5px solid var(--danger);
+      background: var(--warm);
+      color: #35251d;
+      font-size: 19px;
+      line-height: 1.55;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .card,
+    .checklist,
+    .matrix {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fffaf2;
+      padding: 18px;
+    }
+
+    .card strong,
+    .matrix strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent-dark);
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .checklist {
+      background: var(--accent-soft);
+    }
+
+    .checklist li::marker {
+      color: var(--accent);
+    }
+
+    .caption {
+      margin-top: -6px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .quote {
+      margin: 24px 0;
+      padding: 0 0 0 22px;
+      border-left: 4px solid var(--accent);
+      color: #35403d;
+      font-size: 21px;
+      font-style: italic;
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .content {
+        display: block;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .hero {
+        padding-top: 42px;
+      }
+
+      .meta {
+        margin-top: 26px;
+      }
+
+      .toc {
+        position: static;
+        margin: 28px 0 8px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .toolbar,
+      .toc {
+        display: none;
+      }
+
+      .shell {
+        padding: 0;
+      }
+
+      article {
+        border: 0;
+        box-shadow: none;
+      }
+
+      .hero,
+      .content {
+        display: block;
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="toolbar">
+      <p>Memo học và áp dụng behavior design</p>
+      <button type="button" onclick="window.print()">In / Lưu PDF</button>
+    </div>
+
+    <article>
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Product thinking · Behavior design</p>
+          <h1>5 khung tư duy hành vi để học và áp dụng</h1>
+          <p class="lead">
+            Đây không phải là 5 lý thuyết để học thuộc. Đây là 5 lens để nhìn một câu hỏi rất thực tế:
+            vì sao người dùng làm, không làm, quay lại, bỏ cuộc, hoặc chịu đầu tư thêm vào sản phẩm?
+          </p>
+        </div>
+        <div class="meta">
+          <div class="meta-box">
+            <strong>Nên dùng khi</strong>
+            <p>Review onboarding, activation, retention, pricing, copy, UI flow, hoặc feature adoption.</p>
+          </div>
+          <div class="meta-box">
+            <strong>Cách đọc</strong>
+            <p>Đọc từng framework, rồi dùng checklist cuối bài để soi một product flow thật.</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <nav class="toc" aria-label="Mục lục">
+          <strong>Mục lục</strong>
+          <a href="#big-picture">Bức tranh chung</a>
+          <a href="#tiny-habits">BJ Fogg</a>
+          <a href="#hooked">Hooked</a>
+          <a href="#norman">Don Norman</a>
+          <a href="#jtbd">Jobs To Be Done</a>
+          <a href="#behavioral-economics">Behavioral economics</a>
+          <a href="#apply">Cách áp dụng</a>
+          <a href="#study-plan">Cách học</a>
+        </nav>
+
+        <main>
+          <section id="big-picture">
+            <h2>Bức tranh chung</h2>
+            <p>
+              Nếu gom lại thành một câu, 5 khung này giúp mình thiết kế sản phẩm theo hành vi thật,
+              không chỉ theo feature.
+            </p>
+            <pre>Job cần giải quyết
+  → Hành vi cần user làm
+  → Motivation / Ability / Prompt
+  → UI có dễ hiểu, dễ làm, có feedback không
+  → Có reward và investment để user quay lại không
+  → Default, social proof, loss framing có giúp user ra quyết định không</pre>
+            <div class="principle">
+              Đúc rút lớn nhất: khi user không dùng một feature, đừng kết luận ngay là họ không cần.
+              Có thể job chưa rõ, hành động quá khó, prompt sai thời điểm, UI không đủ rõ,
+              hoặc reward không đủ nhanh.
+            </div>
+          </section>
+
+          <section id="tiny-habits">
+            <h2>1. BJ Fogg - Tiny Habits / Behavior Model</h2>
+            <p>
+              BJ Fogg nhìn hành vi như kết quả của ba yếu tố: user có đủ muốn không, hành động có đủ dễ không,
+              và có lời nhắc đúng lúc không.
+            </p>
+            <pre>Behavior = Motivation x Ability x Prompt</pre>
+            <div class="grid">
+              <div class="card">
+                <strong>Motivation</strong>
+                User có đủ lý do để làm không? Ví dụ: muốn giảm workload support, tăng conversion, giảm missed chats.
+              </div>
+              <div class="card">
+                <strong>Ability</strong>
+                Hành động có dễ làm không? Ít bước không? Có cần hiểu kỹ thuật không?
+              </div>
+              <div class="card">
+                <strong>Prompt</strong>
+                User có được nhắc đúng lúc không? Ví dụ khi họ vừa thấy ticket tăng, chứ không phải lúc họ đang bận setup billing.
+              </div>
+              <div class="card">
+                <strong>Tiny habit</strong>
+                Bắt đầu bằng hành động cực nhỏ: preview 1 câu trả lời, bật AI cho 1 nhóm câu hỏi, import 1 FAQ.
+              </div>
+            </div>
+            <h3>Áp dụng</h3>
+            <ul>
+              <li>Nếu user không làm, kiểm tra Ability trước khi cố tăng Motivation.</li>
+              <li>Giảm hành động về mức nhỏ nhất có thể làm ngay.</li>
+              <li>Đặt prompt ở thời điểm user đang cảm nhận pain rõ nhất.</li>
+            </ul>
+          </section>
+
+          <section id="hooked">
+            <h2>2. Nir Eyal - Hooked</h2>
+            <p>
+              Hooked nói về vòng lặp khiến user quay lại và đầu tư thêm vào sản phẩm.
+            </p>
+            <pre>Trigger → Action → Variable Reward → Investment</pre>
+            <div class="grid">
+              <div class="card">
+                <strong>Trigger</strong>
+                Tín hiệu kéo user quay lại: email, alert, badge, reminder, hoặc chính pain trong workflow.
+              </div>
+              <div class="card">
+                <strong>Action</strong>
+                Hành động đơn giản nhất user cần làm sau trigger.
+              </div>
+              <div class="card">
+                <strong>Variable reward</strong>
+                Phần thưởng có yếu tố mới hoặc bất ngờ: thấy AI trả lời đúng câu khó, phát hiện insight mới, tiết kiệm thời gian rõ ràng.
+              </div>
+              <div class="card">
+                <strong>Investment</strong>
+                User bỏ thêm dữ liệu, cấu hình, template, FAQ, brand voice. Lần sau sản phẩm hữu ích hơn.
+              </div>
+            </div>
+            <h3>Áp dụng</h3>
+            <ul>
+              <li>Đừng chỉ thiết kế một action đơn lẻ. Hãy thiết kế vòng lặp quay lại.</li>
+              <li>Reward nên là progress thật, không phải gamification rỗng.</li>
+              <li>Investment càng hợp lý, switching cost càng tự nhiên.</li>
+            </ul>
+          </section>
+
+          <section id="norman">
+            <h2>3. Don Norman - Design of Everyday Things</h2>
+            <p>
+              Don Norman giúp mình nhìn UI từ góc độ: user có hiểu được mình có thể làm gì,
+              làm xong chuyện gì xảy ra, và hệ thống đang ở trạng thái nào không.
+            </p>
+            <div class="grid">
+              <div class="card">
+                <strong>Affordance</strong>
+                Nhìn vào biết thứ đó dùng để làm gì. Button phải ra button, field phải ra field.
+              </div>
+              <div class="card">
+                <strong>Signifier</strong>
+                Tín hiệu chỉ rõ nên bấm, kéo, chọn, nhập ở đâu.
+              </div>
+              <div class="card">
+                <strong>Feedback</strong>
+                Sau action phải biết đã saved, failed, syncing, published, hay disabled.
+              </div>
+              <div class="card">
+                <strong>Mapping</strong>
+                Điều khiển phải khớp với kết quả. Kéo slider, đổi toggle, chọn template phải thấy kết quả tương ứng.
+              </div>
+            </div>
+            <h3>Áp dụng</h3>
+            <ul>
+              <li>Nếu user phải đoán trạng thái hệ thống, UI đang thiếu feedback.</li>
+              <li>Nếu user phải đọc hướng dẫn dài mới dùng được, affordance/signifier đang yếu.</li>
+              <li>Error message phải giúp sửa lỗi, không chỉ báo lỗi.</li>
+            </ul>
+          </section>
+
+          <section id="jtbd">
+            <h2>4. Jobs To Be Done</h2>
+            <p>
+              Jobs To Be Done nhắc mình rằng user không mua product vì product. Họ "thuê" product để đạt một tiến bộ cụ thể trong đời sống hoặc công việc.
+            </p>
+            <pre>User không thuê "AI chatbot".
+User thuê nó để:
+- giảm thời gian trả lời câu hỏi lặp lại
+- hỗ trợ khách sau giờ làm
+- tăng conversion khi CS offline
+- giữ chất lượng trả lời đồng đều
+- tránh tuyển thêm người quá sớm</pre>
+            <div class="quote">
+              Câu hỏi mạnh nhất: trước khi dùng mình, user đang dùng cách gì để giải quyết việc này?
+            </div>
+            <h3>Áp dụng</h3>
+            <ul>
+              <li>Đừng bắt đầu bằng feature. Bắt đầu bằng job user cần hoàn thành.</li>
+              <li>Segment tốt không chỉ là shop lớn hay nhỏ, mà là pain/job khác nhau.</li>
+              <li>Copy, onboarding và pricing nên bám theo job, không chỉ bám theo tính năng.</li>
+            </ul>
+          </section>
+
+          <section id="behavioral-economics">
+            <h2>5. Behavioral economics cơ bản</h2>
+            <p>
+              Đây là nhóm nguyên lý về thiên kiến hành vi. Dùng đúng thì giúp user ra quyết định dễ hơn.
+              Dùng sai thì thành manipulation, nên cần gắn với lợi ích thật của user.
+            </p>
+            <div class="grid">
+              <div class="card">
+                <strong>Loss aversion</strong>
+                Người ta sợ mất hơn là thích được. "Bạn đang bỏ lỡ 23 câu hỏi mỗi tuần" thường cụ thể hơn "tăng hiệu suất".
+              </div>
+              <div class="card">
+                <strong>Default effect</strong>
+                Mặc định tốt giúp user đi đúng hướng mà không phải tự cấu hình quá nhiều.
+              </div>
+              <div class="card">
+                <strong>Social proof</strong>
+                Người ta tin hơn khi thấy người giống mình đã làm. Social proof nên cụ thể theo ngữ cảnh.
+              </div>
+              <div class="card">
+                <strong>Commitment</strong>
+                Cam kết nhỏ làm user dễ đi tiếp. Ví dụ chọn một mục tiêu chính trước khi setup.
+              </div>
+            </div>
+            <h3>Áp dụng</h3>
+            <ul>
+              <li>Thiết kế default thật tốt, đừng đẩy hết quyết định cho user.</li>
+              <li>Dùng social proof cụ thể: ngành, size, use case, tình huống.</li>
+              <li>Frame loss khi có mất mát thật, không hù dọa rỗng.</li>
+            </ul>
+          </section>
+
+          <section id="apply">
+            <h2>Checklist áp dụng vào product flow</h2>
+            <p>Dùng checklist này khi review một flow như onboarding, bật automation, publish chatbot, tạo template, hoặc upgrade plan.</p>
+            <div class="checklist">
+              <ol>
+                <li>User đang thuê product để làm job gì?</li>
+                <li>Hành vi quan trọng tiếp theo mà mình muốn user làm là gì?</li>
+                <li>User có đủ motivation không?</li>
+                <li>Action đó có đủ dễ không?</li>
+                <li>Prompt có xuất hiện đúng thời điểm không?</li>
+                <li>UI có affordance, signifier và feedback rõ không?</li>
+                <li>Sau action, user có thấy reward hoặc progress thật không?</li>
+                <li>User có investment nào làm lần sau sản phẩm tốt hơn không?</li>
+                <li>Default hiện tại có giúp user đi đúng hướng không?</li>
+                <li>Có social proof hoặc loss framing nào thật sự hữu ích không?</li>
+              </ol>
+            </div>
+
+            <h3>Ví dụ nhanh với AI support</h3>
+            <div class="matrix">
+              <strong>Nhận định tốt hơn</strong>
+              <p>
+                Merchant không bật AI reply không hẳn vì họ không thích AI.
+                Có thể job chưa rõ, setup quá khó, prompt sai thời điểm,
+                hoặc họ chưa thấy reward đủ nhanh sau khi bật.
+              </p>
+            </div>
+          </section>
+
+          <section id="study-plan">
+            <h2>Cách học để dùng được</h2>
+            <p>Không cần học cả 5 thứ một lúc. Học theo thứ tự tạo năng lực thực chiến.</p>
+            <ol>
+              <li><strong>Jobs To Be Done:</strong> học cách hỏi đúng job, competitor thật, pain thật.</li>
+              <li><strong>BJ Fogg:</strong> học cách phân tích vì sao hành vi không xảy ra.</li>
+              <li><strong>Don Norman:</strong> học cách sửa UI để dễ hiểu và có feedback rõ.</li>
+              <li><strong>Hooked:</strong> học cách thiết kế vòng lặp quay lại và investment.</li>
+              <li><strong>Behavioral economics:</strong> học cách dùng default, framing, social proof, commitment.</li>
+            </ol>
+            <div class="principle">
+              Bài tập 30 phút: chọn một flow thật trong product. Viết ra job, hành vi mong muốn,
+              motivation, ability, prompt, feedback, reward, investment, default. Chỗ nào mơ hồ chính là chỗ cần cải thiện.
+            </div>
+          </section>
+        </main>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
