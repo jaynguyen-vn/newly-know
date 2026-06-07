@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nói cho người ta muốn nghe — đúc kết từ @cothaogiaotiep</title>
+<meta name="description" content="Cẩm nang kỹ năng giao tiếp và luyện giọng, hệ thống hóa từ 62 video của kênh TikTok @cothaogiaotiep (Cô Thảo — MC &amp; giáo viên dạy giao tiếp).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
+<style>
+  :root{
+    --bg:#faf6f3; --paper:#fffdfb; --ink:#2a2320; --muted:#6f6358;
+    --accent:#c0405b; --accent2:#a8324c; --accent-soft:#f3dfe2; --line:#ece0d8;
+    --quote:#a8324c; --chip:#f7e9ea; --shadow:0 1px 3px rgba(80,40,40,.07),0 8px 30px rgba(80,40,40,.06);
+    --maxw:760px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{--bg:#181311;--paper:#211a18;--ink:#efe5df;--muted:#ad9f95;--accent:#ef8aa0;
+      --accent2:#f0a8b8;--accent-soft:#3a2228;--line:#332823;--quote:#ef8aa0;--chip:#2c1f1d;
+      --shadow:0 1px 3px rgba(0,0,0,.3),0 8px 30px rgba(0,0,0,.25);}
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Lora","Times New Roman",Georgia,serif;
+    line-height:1.74;font-size:18px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .sans{font-family:"Be Vietnam Pro",ui-sans-serif,system-ui,sans-serif}
+
+  /* Cover */
+  .cover{min-height:90vh;display:flex;flex-direction:column;justify-content:center;
+    text-align:center;padding:64px 22px;border-bottom:1px solid var(--line)}
+  .cover .kicker{letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;
+    color:var(--accent);font-family:"Be Vietnam Pro",sans-serif;margin-bottom:26px}
+  .cover h1{font-size:clamp(2.1rem,6vw,3.5rem);line-height:1.1;margin:.1em 0 .4em;font-weight:700}
+  .cover .sub{color:var(--muted);font-size:1.12rem;max-width:600px;margin:0 auto 30px}
+  .cover .meta{font-family:"Be Vietnam Pro",sans-serif;font-size:.82rem;color:var(--muted);
+    border-top:1px solid var(--line);padding-top:20px;max-width:560px;margin:18px auto 0}
+  .stats{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;margin:14px 0 0}
+  .stats b{display:block;font-size:1.6rem;color:var(--accent);font-family:"Be Vietnam Pro",sans-serif}
+  .stats span{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-family:"Be Vietnam Pro",sans-serif}
+
+  /* TOC */
+  .toc{background:var(--paper);border:1px solid var(--line);border-radius:14px;
+    padding:26px 30px;margin:46px 0;box-shadow:var(--shadow)}
+  .toc h2{margin:0 0 16px;font-size:.95rem;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--accent);font-family:"Be Vietnam Pro",sans-serif}
+  .toc ol{margin:0;padding:0;list-style:none}
+  .toc li{margin:.1em 0;border-bottom:1px solid var(--line)}
+  .toc li:last-child{border-bottom:0}
+  .toc a{color:var(--ink);text-decoration:none;display:flex;gap:14px;align-items:baseline;padding:.6em 0}
+  .toc a:hover{color:var(--accent)}
+  .toc .n{font-family:"Be Vietnam Pro",sans-serif;font-size:.8rem;color:var(--accent);font-weight:600;flex:none;width:1.8em}
+
+  /* Sections */
+  section{padding:46px 0;border-top:1px solid var(--line)}
+  .chap-no{font-family:"Be Vietnam Pro",sans-serif;font-size:.74rem;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--accent)}
+  h2.chap{font-size:clamp(1.5rem,4vw,2.1rem);line-height:1.2;margin:.18em 0 .5em;font-weight:700}
+  h3{font-size:1.18rem;margin:1.8em 0 .4em;color:var(--ink);font-weight:600}
+  p{margin:.75em 0}
+  .lead{font-size:1.08rem;color:var(--muted);font-style:italic;margin-bottom:1.2em}
+  ul.clean{list-style:none;padding-left:0}
+  ul.clean li{padding-left:1.5em;position:relative;margin:.55em 0}
+  ul.clean li::before{content:"›";position:absolute;left:0;color:var(--accent);font-weight:700;font-size:1.1em}
+  strong{color:var(--ink)}
+
+  blockquote{margin:1.2em 0;padding:.5em 0 .5em 1.15em;border-left:3px solid var(--accent);
+    color:var(--quote);font-style:italic;font-size:1.04rem}
+
+  .principle{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:12px;padding:16px 22px;margin:1.2em 0;box-shadow:var(--shadow)}
+  .principle .ttl{font-weight:700;color:var(--accent);font-family:"Be Vietnam Pro",sans-serif;font-size:.95rem}
+  .principle p{margin:.35em 0 0}
+
+  .script{background:var(--chip);border-radius:12px;padding:16px 20px;margin:1.3em 0;
+    font-family:"Be Vietnam Pro",sans-serif;font-size:.96rem}
+  .script .ttl{font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.7rem;
+    color:var(--accent);display:block;margin-bottom:10px}
+  .script .say{display:block;margin:.5em 0;padding-left:1.1em;border-left:2px solid var(--accent-soft);
+    color:var(--ink)}
+
+  .apply{background:linear-gradient(180deg,var(--accent-soft),transparent);border:1px solid var(--line);
+    border-radius:12px;padding:18px 22px;margin:1.5em 0;
+    font-family:"Be Vietnam Pro",sans-serif;font-size:.95rem}
+  .apply .ttl{font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;
+    color:var(--accent);display:block;margin-bottom:10px}
+  .apply ul{margin:.3em 0;padding-left:1.2em}
+  .apply li{margin:.4em 0}
+
+  .avoid{font-family:"Be Vietnam Pro",sans-serif;font-size:.92rem;color:var(--muted);
+    background:transparent;border:1px dashed var(--line);border-radius:12px;padding:14px 20px;margin:1.2em 0}
+  .avoid .ttl{font-weight:700;color:#b4564e;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:8px}
+  .avoid ul{margin:.2em 0;padding-left:1.2em} .avoid li{margin:.3em 0}
+
+  .sources{margin:2em 0 .4em;padding:16px 20px;border:1px dashed var(--line);border-radius:12px;
+    font-family:"Be Vietnam Pro",sans-serif;font-size:.9rem}
+  .sources .ttl{display:block;font-weight:700;color:var(--accent);font-size:.72rem;letter-spacing:.08em;
+    text-transform:uppercase;margin-bottom:10px}
+  .sources ul{list-style:none;margin:0;padding:0}
+  .sources li{margin:.1em 0;display:flex;justify-content:space-between;gap:14px;align-items:baseline;
+    border-bottom:1px solid var(--line);padding:.5em 0}
+  .sources li:last-child{border-bottom:0}
+  .sources a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--accent-soft)}
+  .sources a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+  .sources .v{color:var(--muted);font-size:.78rem;white-space:nowrap;flex-shrink:0}
+
+  .disclaimer{font-family:"Be Vietnam Pro",sans-serif;font-size:.9rem;background:var(--chip);
+    border-radius:12px;padding:16px 20px;margin:1.4em 0;color:var(--muted)}
+
+  footer{padding:54px 22px 76px;text-align:center;color:var(--muted);border-top:1px solid var(--line);
+    font-family:"Be Vietnam Pro",sans-serif;font-size:.82rem}
+  footer a{color:var(--accent)}
+
+  #bar{position:fixed;top:0;left:0;height:3px;background:var(--accent);width:0;z-index:50;transition:width .1s}
+  a.top{position:fixed;right:18px;bottom:18px;background:var(--accent);color:#fff;width:44px;height:44px;
+    border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;
+    box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .3s;font-size:1.2rem}
+  a.top.show{opacity:.92;pointer-events:auto}
+  @media(max-width:600px){body{font-size:17px}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header class="cover">
+  <div class="kicker">Cẩm nang đúc kết</div>
+  <h1>Nói cho người ta muốn nghe</h1>
+  <div class="sub">Cẩm nang kỹ năng giao tiếp và luyện giọng, hệ thống hóa từ 62 video của kênh TikTok @cothaogiaotiep (Cô Thảo — MC &amp; giáo viên dạy giao tiếp).</div>
+  <div class="stats">
+    <div><b>62</b><span>video nguồn</span></div>
+    <div><b>11</b><span>chương kỹ năng</span></div>
+    <div><b>1.2M+</b><span>lượt xem nguồn</span></div>
+  </div>
+  <div class="meta">Tài liệu tổng hợp phục vụ học tập cá nhân. Ý tưởng và câu chữ gốc thuộc về tác giả kênh
+  <strong>@cothaogiaotiep</strong> (Cô Thảo — MC và giáo viên dạy giao tiếp). Bản đúc kết này chỉ sắp xếp lại
+  theo chủ đề để dễ học và tham khảo.</div>
+</header>
+
+<div class="wrap">
+  <nav class="toc">
+    <h2>Mục lục</h2>
+    <ol><li><a href="#ch1"><span class="n">01</span> Giao tiếp là kỹ năng mở cánh cửa cuộc đời</a></li><li><a href="#ch2"><span class="n">02</span> Hơi thở &amp; giọng bụng — cái gốc của nói hay</a></li><li><a href="#ch3"><span class="n">03</span> Khẩu hình, chữa ngọng &amp; sửa giọng địa phương</a></li><li><a href="#ch4"><span class="n">04</span> Nói chậm, ngắt nghỉ &amp; truyền cảm</a></li><li><a href="#ch5"><span class="n">05</span> Tự tin &amp; vượt nỗi sợ nói trước đám đông</a></li><li><a href="#ch6"><span class="n">06</span> Nói chuyện tinh tế &amp; tạo thiện cảm</a></li><li><a href="#ch7"><span class="n">07</span> Giới thiệu bản thân &amp; chuẩn bị nội dung nói</a></li><li><a href="#ch8"><span class="n">08</span> Kịch bản câu chữ cho mối quan hệ &amp; xung đột</a></li><li><a href="#ch9"><span class="n">09</span> Giao tiếp nơi công việc</a></li><li><a href="#ch10"><span class="n">10</span> Nghệ thuật MC &amp; dẫn chương trình</a></li><li><a href="#ch11"><span class="n">11</span> Đằng sau nghề nói: đầu tư, cảm xúc &amp; sự chân thành</a></li></ol>
+  </nav>
+
+<section id="ch1">
+  <div class="chap-no">Chương 01 · Nền tảng &amp; Tư duy</div>
+  <h2 class="chap">Giao tiếp là kỹ năng mở cánh cửa cuộc đời</h2>
+  <p class="lead">Trước khi học kỹ thuật, hãy bắt đầu từ một điều: nói chuyện không hề đơn giản, và đó là việc đáng để học cả đời.</p>
+  
+<p>Cô Thảo phản đối cách nghĩ rằng giao tiếp chỉ là “năng khiếu”. Với cô, khả năng diễn đạt rõ ràng nhu cầu,
+suy nghĩ và cảm xúc của mình quyết định việc bạn có được lắng nghe, được tôn trọng và được trao cơ hội hay không —
+trong công việc lẫn trong các mối quan hệ. Ai xem nhẹ chuyện “nói”, người đó tự tay đóng lại một trong những
+cánh cửa quan trọng nhất của đời mình.</p>
+<blockquote>“Vậy thì nói đâu có đơn giản đâu. Như thế là các bạn đã chính tay mình đóng lấy cái cánh cửa
+quan trọng nhất của cuộc đời.”</blockquote>
+<p>Điểm mấu chốt thứ hai là <strong>thái độ chủ động</strong>. Rất nhiều người dừng lại ngay ở câu hỏi
+“liệu mình có học được không?”. Cô Thảo khuyên đổi câu hỏi đó thành “mình sẽ làm được <em>bằng cách nào</em>?” —
+để chuyển từ nghi ngờ sang hành động.</p>
+<div class="principle"><span class="ttl">Nguyên tắc: Linh hoạt theo bối cảnh</span>
+<p>Giao tiếp giỏi không phải là lúc nào cũng nói một kiểu, mà là biết đổi giọng và đổi cách nói cho hợp hoàn cảnh.
+Cô lấy ví dụ PewPew: anh ấy đổi phong cách không phải vì đánh mất chất riêng, mà vì biết dùng đúng giọng cho đúng
+môi trường. Ngược lại, gọi một tô phở mà dùng “giọng bản tin” trang trọng thì lại thành lố, làm người nghe mệt.</p></div>
+<div class="apply"><span class="ttl">Áp dụng ngay</span><ul>
+<li>Xem giao tiếp là kỹ năng cần luyện suốt đời, không phải thứ “có sẵn hoặc không”.</li>
+<li>Khi muốn cải thiện, hỏi “mình làm bằng cách nào” thay vì “liệu mình có làm được không”.</li>
+<li>Trước mỗi cuộc nói chuyện, nhận diện bối cảnh: trang trọng hay đời thường, để chọn giọng cho hợp.</li>
+</ul></div>
+
+  <div class="sources"><span class="ttl">Video nguồn (4)</span><ul><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7543877811094768914" target="_blank" rel="noopener">Trả lời @Chim chích bông Có những cái cô Thảo không thể dạy 😅</a><span class="v">▶ 45.8K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7535858580201803015" target="_blank" rel="noopener">Gọi phở kiểu này chủ quán mắc mệt ha</a><span class="v">▶ 16.6K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7572451740268743954" target="_blank" rel="noopener">Trả lời @Tún♏️ vì cmt của bạn khá đặc biệt nên mình xin phép trả lời ...</a><span class="v">▶ 4.6K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7614335258879659285" target="_blank" rel="noopener">Tính cách quyết định vận mệnh mỗi người, giảm thời gian suy nghĩ và t...</a><span class="v">▶ 2.9K</span></li></ul></div>
+</section>
+
+<section id="ch2">
+  <div class="chap-no">Chương 02 · Kỹ thuật giọng</div>
+  <h2 class="chap">Hơi thở &amp; giọng bụng — cái gốc của nói hay</h2>
+  <p class="lead">“Không ai nói hay mà thở sai cả.” Trước khi luyện câu chữ, phải luyện nền: hơi.</p>
+  
+<p>Rất nhiều người tưởng mình “giọng yếu”, nói câu dài là hụt hơi, giọng nhỏ — nhưng nguyên nhân thật thường nằm ở
+chỗ <strong>thở sai</strong>: chỉ hít nông ở ngực thay vì đưa hơi xuống vùng bụng quanh rốn. Dấu hiệu dễ nhận: khi
+hít vào mà vai và ngực nâng lên nhiều, đó là thở nông.</p>
+<blockquote>“Không ai nói hay mà thở sai cả. Là do bạn thở sai cách thôi.”</blockquote>
+<div class="principle"><span class="ttl">Nguyên tắc: Lấy hơi xuống bụng, rồi “bật” hơi ra</span>
+<p>Hít sâu cho bụng căng tròn, rồi khi nói thì chủ động đẩy hơi ra ngoài — không giữ hơi mắc kẹt trong cổ hay trong
+bụng. Đây chính là “giọng bụng”: giọng có lực, to và rõ hơn hẳn giọng phát ra ở cổ họng.</p></div>
+<div class="apply"><span class="ttl">Bài tập mỗi ngày 5 phút</span><ul>
+<li><strong>Đếm số một hơi:</strong> hít sâu xuống bụng rồi đếm 1–2–3… liên tục đến khi hết hơi, để đo &amp; tăng sức bền của cột hơi.</li>
+<li><strong>Tập “bật hơi”:</strong> cảm nhận bụng căng rồi mới nói; nếu đếm/nói mà hơi vẫn nằm im bên trong là chưa đẩy ra.</li>
+<li><strong>Nâng tông nếu giọng quá trầm:</strong> giọng trầm nghe “men” nhưng dễ làm người nghe mệt — nâng nhẹ tông cho sáng, thân thiện.</li>
+<li>Khi nói câu dài, chia thành cụm ý ngắn và lấy hơi giữa các cụm, đừng dồn hết vào một câu.</li>
+</ul></div>
+<div class="avoid"><span class="ttl">Tránh</span><ul>
+<li>Hít hơi nông ở ngực rồi nói nhanh cho kịp → hụt hơi giữa câu.</li>
+<li>Chỉ phát âm nhẹ ở miệng/cổ họng, nói lí nhí.</li>
+<li>Cố hét to thay vì dùng hơi từ bụng.</li>
+</ul></div>
+
+  <div class="sources"><span class="ttl">Video nguồn (4)</span><ul><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7546494340495936786" target="_blank" rel="noopener">Thực hành giọng bụng cho học viên bán trầm hương @Trầm Hương Bảo Lộc ...</a><span class="v">▶ 11.7K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7550158352282701074" target="_blank" rel="noopener">Luyện tập hơi thở bằng cách đếm số</a><span class="v">▶ 9.6K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7566868912441167122" target="_blank" rel="noopener">Thở đúng thở sai</a><span class="v">▶ 9.5K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7541830561963265298" target="_blank" rel="noopener">Trả lời @Tạp Hoá Hà Vẩu phải nói to nhé mọi người</a><span class="v">▶ 5.1K</span></li></ul></div>
+</section>
+
+<section id="ch3">
+  <div class="chap-no">Chương 03 · Phát âm</div>
+  <h2 class="chap">Khẩu hình, chữa ngọng &amp; sửa giọng địa phương</h2>
+  <p class="lead">Nói chưa rõ chữ thường không phải do “giọng xấu”, mà do khẩu hình và vị trí lưỡi đặt sai. Tin tốt: ngọng không phải lúc nào cũng bẩm sinh — nhiều trường hợp có thể sửa được.</p>
+  
+<p>Video được xem nhiều nhất nhóm này (gần 190K lượt) chỉ nói một điều: khi nói chưa rõ, đừng cố nói to hơn —
+hãy <strong>kiểm tra khẩu hình miệng</strong>. Khi luyện chuẩn khẩu hình của từng nguyên âm cơ bản, độ rõ của cả
+giọng nói cũng cải thiện theo.</p>
+<blockquote>“Cứ mở khẩu hình và phát âm chuẩn được 5 cái âm này thì bạn sẽ cải thiện được tình trạng của mình.”</blockquote>
+<div class="principle"><span class="ttl">Nguyên tắc: Sửa âm bằng vị trí lưỡi &amp; khẩu hình, không bằng lực</span>
+<p>“Nguyên tắc của các âm là mình chỉ <em>bật âm</em> thôi” — không cong lưỡi hay phóng đại chuyển động miệng quá mức.
+Mỗi âm có một khẩu hình riêng cần đặt đúng:</p>
+<ul class="clean">
+<li><strong>Âm “n” vs “l”:</strong> “n” giữ lưỡi bằng, không cong; “l” cong đầu lưỡi lên hàm trên. Luyện theo cặp gần giống: <em>nóng – lóng</em>, <em>nam – lam</em>.</li>
+<li><strong>Âm “O”:</strong> khẩu hình tròn gọn “như quả trứng”, đừng mở rộng thành âm “A” (O → OA là sai).</li>
+<li><strong>Âm “E”:</strong> há miệng tự nhiên, đừng làm tròn/đẩy môi khiến E biến thành “IE”.</li>
+<li><strong>Soi gương khi luyện</strong> để thấy miệng đang mở/tròn/kẹp — đừng chỉ nghe âm thanh.</li>
+</ul></div>
+<p>Với <strong>giọng địa phương</strong>, Cô Thảo không bắt bỏ bản sắc vùng miền. Cô khuyên: trong môi trường học tập,
+công sở, phỏng vấn hay thuyết trình — nơi cần sự rõ ràng — hãy biết điều chỉnh sang giọng phổ thông, dễ nghe.
+Bị góp ý về giọng thì xem đó là cơ hội cải thiện, đừng tự ti.</p>
+<div class="apply"><span class="ttl">Áp dụng ngay</span><ul>
+<li>Mỗi ngày luyện khoảng 5 phút với âm mình hay sai nhất; luyện đều quan trọng hơn luyện nhiều.</li>
+<li>Luyện âm đơn cho chuẩn trước, rồi mới ghép vào từ và câu.</li>
+<li>Dùng từ địa phương thì kiểm tra xem người nghe có hiểu đúng không.</li>
+</ul></div>
+
+  <div class="sources"><span class="ttl">Video nguồn (6)</span><ul><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7545708520713227538" target="_blank" rel="noopener">Trả lời @Phan Kiên mở khẩu hình sẽ khắc phục được nhé</a><span class="v">▶ 186.4K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7546805901429083400" target="_blank" rel="noopener">Ngọng âm “O”</a><span class="v">▶ 10.6K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7544212320122113288" target="_blank" rel="noopener">Các lỗi giọng hay gặp</a><span class="v">▶ 9K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7550543607510371602" target="_blank" rel="noopener">Chữa ngọng n và l</a><span class="v">▶ 8.1K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7541618570053078290" target="_blank" rel="noopener">Nên sửa nhé mọi người &lt;3</a><span class="v">▶ 5.9K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7485615920518286610" target="_blank" rel="noopener">Sửa âm địa phương</a><span class="v">▶ 4.3K</span></li></ul></div>
+</section>
+
+<section id="ch4">
+  <div class="chap-no">Chương 04 · Nhịp nói</div>
+  <h2 class="chap">Nói chậm, ngắt nghỉ &amp; truyền cảm</h2>
+  <p class="lead">Nói nhỏ và nói nhanh là hai lỗi làm “mất điểm” nhiều nhất. Sửa được hai lỗi này, giọng bạn đã khác hẳn.</p>
+  
+<p>Một sự thật phũ phàng: <strong>“mình nghe rõ” không có nghĩa người khác nghe rõ</strong>. Đừng đánh giá âm lượng
+theo cảm nhận của bản thân — hãy quan sát phản ứng của người nghe. Nói nhỏ, nói không rõ từ khiến người đối diện
+không hiểu và làm giảm điểm giao tiếp của bạn.</p>
+<div class="principle"><span class="ttl">Nguyên tắc: Vấp là biểu hiện của nói nhanh, nói nhanh là biểu hiện của run</span>
+<p>Khi run, ta thường nói nhanh hơn; nói nhanh lại dễ vấp và nuốt từ. Vì vậy “nói chậm lại” vừa giúp rõ chữ, vừa tạo phong
+thái điềm tĩnh, kiểm soát. Cách luyện hiệu quả: mỗi ngày chọn một đoạn sách ngắn và <em>đọc thành tiếng từng từ một</em>.</p></div>
+<blockquote>“Phải đọc ra miệng nha. Đọc bằng mắt thì chúng ta sẽ càng nói nhanh hơn.”</blockquote>
+<p>Để nói câu dài không hụt hơi, hãy <strong>ngắt nghỉ theo cụm ý và nhấn nhá</strong>. Ví dụ Cô Thảo đưa ra:</p>
+<div class="script"><span class="ttl">Mẫu: ngắt câu giới thiệu</span>
+<span class="say">Thay vì nói một mạch: “Xin chào tất cả các bạn, mình là Phương Thảo và hiện tại mình đang là MC…”</span>
+<span class="say">Hãy ngắt: “Xin chào mọi người, / mình là Phương Thảo. / Hiện tại mình đang là MC / và là giáo viên dạy giao tiếp.”</span></div>
+<p>Cuối cùng là <strong>âm điệu</strong> — thứ Cô Thảo gọi là “một thảm hoạ trong giao tiếp” nếu dùng sai. Cùng một câu
+“Cảm ơn nha!”, “Không sao đâu!”, nếu lên giọng/kéo dài cuối câu sẽ thành mỉa mai. Trước khi muốn nói truyền cảm, hãy
+tự hỏi “nội dung này cần truyền cảm xúc gì?” rồi điều chỉnh tông: an ủi thì nhẹ, động viên thì ấm, nhấn mạnh thì chắc.</p>
+<blockquote>“Âm điệu quyết định cảm xúc, và cảm xúc sẽ quyết định người ta có tin bạn hay không.”</blockquote>
+<div class="apply"><span class="ttl">Áp dụng ngay</span><ul>
+<li>Trước khi nói câu quan trọng, tự nhắc một tiếng: <em>nói chậm lại</em>.</li>
+<li>Đánh dấu chỗ ngắt nghỉ trong kịch bản; nhấn vào từ gợi hình, gợi cảm.</li>
+<li>Luyện đọc một câu với nhiều sắc thái để kiểm soát cảm xúc truyền ra.</li>
+<li>Mở to khẩu hình; nếu hay bị nhắc “nói nhỏ”, luyện giọng bụng thay vì cố hét.</li>
+</ul></div>
+
+  <div class="sources"><span class="ttl">Video nguồn (7)</span><ul><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7546080118620359954" target="_blank" rel="noopener">Trả lời @kiinz_ph nói nhỏ = mất điểm trong giao tiếp</a><span class="v">▶ 48.6K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7547570170068356359" target="_blank" rel="noopener">Trả lời @T I E N N Q chú ý ngắt nghỉ nhấn nhá nhé bạn &lt;3</a><span class="v">▶ 39.5K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7569975882488565010" target="_blank" rel="noopener">Cách để chúng ta nói chậm lại</a><span class="v">▶ 16.9K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7563899224706878727" target="_blank" rel="noopener">Sai âm điệu trong giao tiếp</a><span class="v">▶ 9.8K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7539029209377721608" target="_blank" rel="noopener">Tip nhỏ có các bạn thích chữa jack nè !</a><span class="v">▶ 6.4K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7539549744746482951" target="_blank" rel="noopener">Chậm mà chắc nha các bạn &lt;3</a><span class="v">▶ 4.2K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7582434967070805269" target="_blank" rel="noopener">Các lỗi cơ bản khi đọc văn</a><span class="v">▶ 3.9K</span></li></ul></div>
+</section>
+
+<section id="ch5">
+  <div class="chap-no">Chương 05 · Tâm lý</div>
+  <h2 class="chap">Tự tin &amp; vượt nỗi sợ nói trước đám đông</h2>
+  <p class="lead">2 người hay 200 người không quan trọng. Quan trọng là bạn nói gì và đã luyện thế nào.</p>
+  
+<p>Hiện tượng “bí từ” — đang nói tự dưng tắc không nói tiếp được — theo Cô Thảo không chỉ do thiếu vốn từ, mà còn do
+<strong>thiếu môi trường rèn phản xạ</strong>. Giải pháp không phải học thêm lý thuyết, mà là đặt mình vào tình huống
+phải nói thật: bắt đầu từ môi trường ít áp lực (gia đình), rồi chủ động nhận phần thuyết trình trong nhóm, tận dụng
+các sự kiện nội bộ ở công ty.</p>
+<div class="principle"><span class="ttl">Nguyên tắc: “Giả vờ tự tin” bằng hành vi bên ngoài</span>
+<p>Sự tự tin có thể “diễn” trước qua hành vi, rồi dần ảnh hưởng vào trạng thái bên trong. Hai điểm cần luyện: <strong>ánh mắt</strong>
+(nhìn về người đối diện, tự nhiên, không né cũng không nhìn chằm chằm) và <strong>tốc độ</strong> (chủ động nói chậm khi thấy hồi hộp).</p></div>
+<blockquote>“Khi mình nhìn một cách tự tin, mình sẽ chủ động hơn trong cuộc trò chuyện.”</blockquote>
+<p>Khi <strong>run lúc thuyết trình</strong>: chuẩn bị kỹ nội dung để tăng cảm giác chắc chắn; bớt ám ảnh về ngoại hình,
+trang phục hay phản ứng khán giả; nếu quá run thì nhìn vào một điểm xa thay vì nhìn trực diện từng khuôn mặt; và đừng cố
+“nói cho xong” mà tập trung truyền từng ý rõ ràng. Còn nỗi ám ảnh số đông?</p>
+<blockquote>“Có 2 người hay 200 người thì không quá khác nhau. Tập luyện, tập luyện và tập luyện —
+điều quan trọng, cô nhắc lại 3 lần.”</blockquote>
+<div class="apply"><span class="ttl">Áp dụng ngay</span><ul>
+<li>Chủ động nhận phần nói trong các dịp ít áp lực để rèn phản xạ.</li>
+<li>Viết trước các ý chính trước buổi phát biểu để giảm hoang mang.</li>
+<li>Giữ ánh mắt tự nhiên + nói chậm có chủ đích = phong thái tự tin.</li>
+</ul></div>
+
+  <div class="sources"><span class="ttl">Video nguồn (5)</span><ul><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7563178957357583624" target="_blank" rel="noopener">Ngôn ngữ hình thể khi thuyết trình</a><span class="v">▶ 90.1K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7544598248191806728" target="_blank" rel="noopener">Thế nào để không bí từ mọi người</a><span class="v">▶ 52.3K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7613976231423282453" target="_blank" rel="noopener">“Giả vờ tự tin” thì nên làm như thế nào</a><span class="v">▶ 18.9K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7548320714135260424" target="_blank" rel="noopener">Trả lời @chó mất tự tin là vì mình đang không có chắc chắn điều mình ...</a><span class="v">▶ 7.7K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7601020603977452821" target="_blank" rel="noopener">Trả lời @Trần Hoà 2 người hay 200 người cũng chỉ cần nắm được 3 yếu t...</a><span class="v">▶ 3.9K</span></li></ul></div>
+</section>
+
+<section id="ch6">
+  <div class="chap-no">Chương 06 · Thiện cảm</div>
+  <h2 class="chap">Nói chuyện tinh tế &amp; tạo thiện cảm</h2>
+  <p class="lead">Video được xem nhiều nhất kênh (hơn 200K) không dạy nói hay — mà dạy cách lắng nghe và giữ chừng mực.</p>
+  
+<p>Sự tinh tế, theo Cô Thảo, nằm ở thái độ nhiều hơn ở câu chữ. Khi mới quen ai đó: giữ chừng mực, đừng vội thân mật
+quá; nghe <em>hết ý</em> người khác trước khi phản hồi; duy trì giao tiếp mắt; và dùng những phản hồi ngắn như “ồ”,
+“à”, hoặc gật đầu để người nói biết mình đang chú ý.</p>
+<blockquote>“Hãy bình tĩnh, lắng nghe câu chuyện đã, và chúng ta sẽ phản hồi sau.”</blockquote>
+<div class="script"><span class="ttl">6 “câu thần chú” lễ phép tạo thiện cảm</span>
+<span class="say">“Dạ”, “Vâng” — khi phản hồi, giúp câu nói nghe lễ phép và dễ mến hơn.</span>
+<span class="say">“Xin chào / Em chào anh / Con chào bố mẹ” — chủ động chào trước, kể cả với người nhỏ tuổi hơn.</span>
+<span class="say">“Cảm ơn” — nói rõ ràng khi nhận giúp đỡ, để người kia thấy được trân trọng.</span>
+<span class="say">“Xin lỗi” — khi cần nhận trách nhiệm hoặc làm dịu tình huống.</span>
+<span class="say">“Xin phép” — để mở lời, từ chối hoặc đặt ranh giới một cách lịch sự.</span></div>
+<div class="principle"><span class="ttl">Nguyên tắc: Khiến người ta nể, đừng khiến người ta sợ</span>
+<p>Khí chất thật thể hiện ở cách cư xử với nhân viên, bảo vệ, người phục vụ — chứ không phải ở việc tỏ ra bề trên.
+Nói nhỏ nhẹ không làm mất uy; ngược lại khiến mình trông có giáo dưỡng hơn.</p></div>
+<p>Muốn <strong>bắt chuyện người lạ</strong> tự nhiên, Cô Thảo có khung 4 bước: (1) quan sát người kia đang quan tâm gì;
+(2) lấy điểm chung làm cớ mở lời; (3) khen cụ thể, đúng sự thật — đừng “thảo mai” quá lâu; (4) chỉ xin liên hệ sau khi
+đã trò chuyện đủ tự nhiên.</p>
+<div class="avoid"><span class="ttl">Tránh</span><ul>
+<li>Mở lời quá đột ngột, khen quá đà → người ta gượng gạo, phòng thủ, tránh né.</li>
+<li>Nghe người khác mà nhìn đi hướng khác, hoặc không phản hồi gì.</li>
+<li>Mặc định người nhỏ tuổi/cấp dưới phải chào mình trước.</li>
+</ul></div>
+
+  <div class="sources"><span class="ttl">Video nguồn (4)</span><ul><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7538855381611662600" target="_blank" rel="noopener">Cần thêm gì để nói chuyện tinh tế hơn cả nhà…!</a><span class="v">▶ 204.2K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7553508472436903176" target="_blank" rel="noopener">Trả lời @Wao Studio chú ý 4 hành động bắt chuyện với người lạ này nhé...</a><span class="v">▶ 13K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7570953486108740882" target="_blank" rel="noopener">6 câu thần chú trong giao tiếp</a><span class="v">▶ 8.9K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7552553551893941512" target="_blank" rel="noopener">Các anh muốn trở thành tổng tài lưu ý nha</a><span class="v">▶ 4.8K</span></li></ul></div>
+</section>
+
+<section id="ch7">
+  <div class="chap-no">Chương 07 · Cấu trúc</div>
+  <h2 class="chap">Giới thiệu bản thân &amp; chuẩn bị nội dung nói</h2>
+  <p class="lead">Bị bất ngờ yêu cầu “giới thiệu vài lời” mà không lắp bắp — bí quyết là có sẵn một khung.</p>
+  
+<div class="script"><span class="ttl">Cấu trúc 5 phần để giới thiệu bản thân</span>
+<span class="say">1. Chào: “Lời đầu tiên, cho phép Phương Thảo gửi lời chào đến tất cả mọi người đang xem hôm nay ạ.”</span>
+<span class="say">2. Tên + vai trò: “Mình là Phương Thảo, hiện đang là MC và giáo viên dạy giao tiếp.”</span>
+<span class="say">3. Kinh nghiệm/điểm mạnh: “Với 6 năm dẫn chương trình và 2 năm đào tạo giao tiếp, thuyết trình, MC sự kiện…”</span>
+<span class="say">4. Lý do/niềm vui được chia sẻ: “…mình rất vui khi được chia sẻ với mọi người.”</span>
+<span class="say">5. Kết: “Cảm ơn mọi người đã lắng nghe. Xin chào và hẹn gặp lại.”</span></div>
+<p>Có khung rồi thì khi bị hỏi bất ngờ, bạn chỉ việc “lắp ghép thông tin” vào, linh hoạt đổi theo bối cảnh (học tập,
+công việc, sự kiện, livestream). Đừng chỉ nói mỗi tên, cũng đừng để phần giới thiệu bị cụt vì thiếu câu kết.</p>
+<p>Với việc <strong>chuẩn bị nội dung nói</strong>, Cô Thảo đưa ra quy trình bắt đầu từ hai câu hỏi:</p>
+<div class="principle"><span class="ttl">Bước 1 — Xác định chủ đề &amp; mục tiêu</span>
+<p>“Trước khi chuẩn bị nội dung thì phải biết mình nói về cái gì.” Thu hẹp chủ đề cho cụ thể, rồi tự hỏi:
+mình muốn người nghe <em>hiểu gì, cảm gì, phản ứng ra sao</em>? Một nội dung tốt luôn có mục tiêu giao tiếp rõ ràng,
+không chỉ có đề tài.</p></div>
+<div class="principle"><span class="ttl">Bước 2 — Hiểu đối tượng người nghe</span>
+<p>Người nghe là ai, nền tảng của họ thế nào, họ quen kiểu ngôn ngữ nào? Với nhóm thực tế (kinh doanh, kỹ thuật) nên dùng
+ngôn ngữ rõ ràng, trực tiếp, ít hoa mỹ. “Một bài nói hay là bài nói khiến người nghe <em>hiểu được</em>, không phải bài
+nói có từ ngữ đẹp.”</p></div>
+<div class="apply"><span class="ttl">Áp dụng ngay</span><ul>
+<li>Thuộc nằm lòng khung 5 phần; tập điền thông tin của chính bạn vào.</li>
+<li>Trước khi soạn nội dung: viết 1 dòng chủ đề + 1 dòng “mình muốn người nghe phản ứng thế nào”.</li>
+<li>Ưu tiên dễ hiểu hơn phô diễn ngôn từ.</li>
+</ul></div>
+
+  <div class="sources"><span class="ttl">Video nguồn (4)</span><ul><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7547922342991760658" target="_blank" rel="noopener">Trả lời @Bùi Xuân Bắc thuộc cấu trúc 5 phần này thì không lo nữa nhé ...</a><span class="v">▶ 22.1K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7575377575271271687" target="_blank" rel="noopener">Giới thiệu bản thân cho bé p1</a><span class="v">▶ 10.1K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7589855507687460116" target="_blank" rel="noopener">Các bước chuẩn bị nội dung nói p1</a><span class="v">▶ 5K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7590237174906375444" target="_blank" rel="noopener">Các bước chuẩn bị nội dung nói p2</a><span class="v">▶ 4.3K</span></li></ul></div>
+</section>
+
+<section id="ch8">
+  <div class="chap-no">Chương 08 · Tình huống khó</div>
+  <h2 class="chap">Kịch bản câu chữ cho mối quan hệ &amp; xung đột</h2>
+  <p class="lead">Đây là “đặc sản” của kênh: những mẫu câu nửa nghiêm túc nửa hài hước để xử lý tình huống khó mà không làm đổ vỡ quan hệ.</p>
+  
+<p>Khi cần góp ý người yêu vô tâm, hứa mà không làm, Cô Thảo nổi tiếng với màn “mắng bằng giọng bản tin”: nêu vấn đề
+khách quan, chỉ ra hành vi lặp lại, nói rõ tác động, rồi đặt ranh giới — tất cả bằng giọng bình tĩnh, chắc chắn.</p>
+<div class="script"><span class="ttl">Mẫu: góp ý nghiêm túc (giọng bản tin)</span>
+<span class="say">“Xin thông báo để anh nắm rõ tình hình. Suốt thời gian qua, anh đã rất nhiều lần hứa hẹn nhưng chưa
+bao giờ thực hiện. Thái độ vô trách nhiệm cùng sự vô tâm của anh đã gây ảnh hưởng nghiêm trọng đến sức khoẻ tinh thần
+của tôi. Vì vậy, tôi chính thức thông báo: nếu thời gian tới anh không chấn chỉnh thì mối quan hệ này sẽ đứng trước
+nguy cơ khủng hoảng toàn diện.”</span></div>
+<div class="script"><span class="ttl">Mẫu: giận dỗi mềm mại (khi mâu thuẫn nhẹ)</span>
+<span class="say">“Anh nói nha, lúc nào cũng hứa hẹn mà chẳng thực hiện gì cả. Người ta đòi anh dài cổ mà chẳng thấy đâu.
+Em buồn muốn xỉu luôn á… Em giận luôn rồi á. Nhưng nếu anh xin lỗi ngọt ngào một chút, dẫn em đi chơi, đi shopping
+thì có khi em sẽ hết giận anh luôn á.”</span></div>
+<div class="principle"><span class="ttl">Nguyên tắc chung khi trách/góp ý</span>
+<ul class="clean">
+<li>Nói rõ <strong>hành vi cụ thể</strong>, đừng quy chụp tính cách (“anh vô tâm”).</li>
+<li>Nêu <strong>tác động lên mình</strong> để đối phương hiểu mức độ nghiêm trọng.</li>
+<li>Đặt <strong>ranh giới + đường lui</strong>: nói rõ mình cần gì để hai bên còn làm hoà.</li>
+<li>Giọng bình tĩnh tạo sức nặng hơn la hét.</li>
+</ul></div>
+<p>Với <strong>ba mẹ</strong>, thông điệp đổi hẳn tông: giao tiếp không phải để thắng. Khi ba mẹ góp ý, đừng nghe bằng
+phản ứng phòng thủ; nhìn đằng sau lời trách có thể là nỗi lo, không hẳn là kiểm soát.</p>
+<blockquote>“Lúc đó, em nghe ba mẹ bằng tai hay bằng tim? Giao tiếp không phải để thắng, mà để chúng ta gần nhau
+thêm chút nữa.”</blockquote>
+<p>Còn khi <strong>tranh cãi</strong>, hãy tự hỏi “mình đang muốn hiểu đúng hay chỉ muốn thắng?”. Sai rõ ràng thì nhận lỗi
+sớm; một lời nhận sai đúng lúc hạ nhiệt xung đột nhanh hơn mọi lý lẽ. Trong <strong>hôn nhân</strong>, chìa khoá là quan
+sát tính cách bạn đời để chọn cách nói chuyện — người thích nhẹ nhàng thì dùng giọng mềm, tránh phản ứng gay gắt.</p>
+
+  <div class="sources"><span class="ttl">Video nguồn (5)</span><ul><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7540165484168088840" target="_blank" rel="noopener">Trả lời @Namchínxị cần gì có nấy nha….</a><span class="v">▶ 46.1K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7540523878309825800" target="_blank" rel="noopener">Trả lời @GK Tea &amp; Coffee tý thì cho cameraman xuống xe ạ</a><span class="v">▶ 9.5K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7593301212368342279" target="_blank" rel="noopener">Em tìm được lý do rồi!</a><span class="v">▶ 5.7K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7542789876131941639" target="_blank" rel="noopener">Làm thế nào để giữ lửa hôn nhân</a><span class="v">▶ 4.3K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7562558403143306504" target="_blank" rel="noopener">Giao tiếp không phải để thắng</a><span class="v">▶ 3.9K</span></li></ul></div>
+</section>
+
+<section id="ch9">
+  <div class="chap-no">Chương 09 · Công sở &amp; Bán hàng</div>
+  <h2 class="chap">Giao tiếp nơi công việc</h2>
+  <p class="lead">Cùng một ý, cách diễn đạt quyết định việc sếp thấy bạn có trách nhiệm hay đang phủi việc.</p>
+  
+<div class="script"><span class="ttl">Mẫu: xin làm online ngày mưa bão (kèm giải pháp)</span>
+<span class="say">❌ Than thở: “Mưa to quá, em không đi làm được đâu sếp ơi.”</span>
+<span class="say">✅ Chia sẻ + giải pháp: “Em sợ ngày mai mưa ngập sẽ khó đến văn phòng, nên em xin phép sếp được làm việc online ạ.”</span></div>
+<div class="principle"><span class="ttl">Nguyên tắc: Đừng chỉ báo vấn đề — đưa kèm giải pháp</span>
+<p>Khi gặp trở ngại, dùng giọng chia sẻ thay vì than thở, và luôn đề xuất phương án xử lý công việc. “Nghe có phải dễ
+chịu mà lại trách nhiệm hơn không?”</p></div>
+<p>Về <strong>quan hệ đồng nghiệp</strong>, Cô Thảo nói thẳng: công ty là môi trường trao đổi lợi ích. Đừng cố lấy lòng
+bằng cách nhận việc quá khả năng rồi làm hỏng — quan hệ tốt bắt đầu từ sự <strong>đáng tin cậy trong công việc</strong>,
+không phải từ việc luôn chiều lòng người khác. Biết từ chối/làm rõ phạm vi việc còn hơn nể nang rồi mất uy tín.</p>
+<div class="principle"><span class="ttl">Bán hàng: giữ vị thế người dẫn dắt</span>
+<p>Đừng mặc định “khách hàng luôn đúng”. Sales đứng ở vị thế người có chuyên môn, xem khách là người cần được hướng
+dẫn để chủ động dẫn dắt cuộc trò chuyện và định hướng thông tin — không để khách kéo lệch hướng tư vấn.</p></div>
+<blockquote>“Khách hàng là người cần tìm hiểu thông tin, và chúng ta là người dẫn dắt họ.”</blockquote>
+<p>Ngay cả một câu chào của bạn sale bất động sản cũng cần đi kèm <strong>ngôn ngữ hình thể</strong>: dáng đứng, ánh mắt,
+tay và năng lượng cơ thể — một câu “Xin chào các anh chị” đơn giản vẫn tạo ấn tượng chuyên nghiệp nếu thể hiện tự tin.</p>
+
+  <div class="sources"><span class="ttl">Video nguồn (4)</span><ul><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7558482695165119762" target="_blank" rel="noopener">Trả lời @Trần Hoà xin như thế này sếp không cho nghỉ cả tuần luôn 😂</a><span class="v">▶ 13.9K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7549789464717970695" target="_blank" rel="noopener">Sửa ngôn ngữ hình thể cho bạn sale bất động sản</a><span class="v">▶ 8K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7554606792655801607" target="_blank" rel="noopener">Cách giao tiếp với khách hàng</a><span class="v">▶ 7.8K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7614800974460308757" target="_blank" rel="noopener">Có nhất thiết phải cố gắng tạo mqh tốt với đồng nghiệp</a><span class="v">▶ 4.1K</span></li></ul></div>
+</section>
+
+<section id="ch10">
+  <div class="chap-no">Chương 10 · Sân khấu</div>
+  <h2 class="chap">Nghệ thuật MC &amp; dẫn chương trình</h2>
+  <p class="lead">Cô Thảo là MC chuyên nghiệp — đây là kho mẫu lời dẫn cho đủ loại sự kiện, dùng được ngay.</p>
+  
+<p>Nền tảng của một MC: luôn chuẩn bị <strong>kịch bản</strong> trước khi lên sân khấu, chọn trang phục hợp sự kiện,
+giữ nét mặt tươi và <strong>nhìn về phía khán giả</strong> để tạo kết nối. Một chi tiết kỹ thuật hay bị bỏ qua là
+cách cầm micro: đừng để mic quá thấp dưới cằm, hãy giữ nghiêng khoảng 45° hướng vào miệng để giọng ấm, rõ và bớt thu
+âm gió.</p>
+<div class="script"><span class="ttl">Mẫu: lời dẫn mở đầu lễ trang trọng (khởi công / khai mạc)</span>
+<span class="say">“Xin hãy hân hoan và nồng nhiệt chào đón quý vị đại biểu, các quý vị quan khách, cùng toàn thể anh chị em cán bộ nhân viên của tổng công ty.”</span>
+<span class="say">“Với những lời nói đầu tiên, cho phép Thảo thay lời ban tổ chức xin gửi tới toàn thể quý vị lời kính chúc sức khoẻ, lời cảm ơn chân thành và lời chào trân trọng nhất.”</span></div>
+<div class="principle"><span class="ttl">Khung dẫn/phát biểu khi bí ý</span>
+<p>Chào mừng &amp; tuyên bố lý do → giới thiệu sự kiện → thông điệp/ý nghĩa → cảm ơn hoặc tuyên bố khai mạc. Mở đầu nhớ
+gọi đủ các nhóm khách mời để tạo sự trang trọng; câu dẫn đừng quá dài kẻo vấp trên sân khấu.</p></div>
+<div class="script"><span class="ttl">Mẫu: tương tác với khán giả nhí</span>
+<span class="say">“Các con vừa xem nhảy nè, các con có thích không?”</span>
+<span class="say">“Các con hãy dành một tràng pháo tay thật lớn cho các anh chị ngay đây!”</span></div>
+<p>Với khán giả trẻ em, dùng câu hỏi ngắn dễ đáp “có/không”, nhắc lại tiết mục trước để tạo mạch nối, và câu “dành một
+tràng pháo tay thật lớn” là cách chuyển cảnh đơn giản mà hiệu quả. Cùng tinh thần đó là các khung phát biểu Trung thu,
+hội xuân, hay lời cảm ơn dịp lễ — tất cả đều theo công thức: gọi tên người tham dự → nêu lý do → thông điệp → chốt ngắn.</p>
+
+  <div class="sources"><span class="ttl">Video nguồn (7)</span><ul><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7574648543932140807" target="_blank" rel="noopener">Tương tác giới thiệu tiết mục văn nghệ</a><span class="v">▶ 37.4K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7589487060474514709" target="_blank" rel="noopener">Có bạn nào đang cầm micro kiểu này không???</a><span class="v">▶ 13.1K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7575789561402445074" target="_blank" rel="noopener">Đôi điều về MC 😌</a><span class="v">▶ 9.1K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7578006320696102151" target="_blank" rel="noopener">Lời dẫn mở đầu lễ khởi công xây dựng</a><span class="v">▶ 7K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7555352122087247111" target="_blank" rel="noopener">Trả lời @Tún♏️ khung phát biểu của bạn đây nha</a><span class="v">▶ 6K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7574319307363028231" target="_blank" rel="noopener">Trả lời @Trần Hoà khung phát biểu dành cho các anh nha…</a><span class="v">▶ 4.2K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7603234213155867924" target="_blank" rel="noopener">Nhắm mắt lại mở mắt ra đã kết thúc 1 năm rồi 🙃</a><span class="v">▶ 3.1K</span></li></ul></div>
+</section>
+
+<section id="ch11">
+  <div class="chap-no">Chương 11 · Chuyện nghề &amp; Cảm hứng</div>
+  <h2 class="chap">Đằng sau nghề nói: đầu tư, cảm xúc &amp; sự chân thành</h2>
+  <p class="lead">Vài lát cắt cho thấy người dạy giao tiếp sống với nghề thế nào — và khi nào kỹ thuật phải nhường chỗ cho sự chân thành.</p>
+  
+<p>Khi chia sẻ chuyện dùng 200 triệu đầu tư mặt bằng làm văn phòng và trung tâm dạy MC, Cô Thảo gợi một nguyên tắc nghề:
+đầu tư nên ưu tiên những khoản phục vụ trực tiếp cho chất lượng dịch vụ — không gian học, loa, mic, máy ảnh — và gắn với
+mục tiêu dài hạn thay vì chi tiêu nhất thời. Kể quá trình xây dựng công việc một cách tự nhiên cũng là cách tạo gần gũi
+và niềm tin.</p>
+<div class="principle"><span class="ttl">Khi nào kỹ thuật nhường chỗ cho cảm xúc</span>
+<p>Ở các dịp lễ, lời chúc hay nhất không phải lời bóng bẩy mà là lời <strong>chân thành</strong>. Muốn truyền cảm xúc mạnh,
+hãy dùng hình ảnh biểu tượng cụ thể và một câu kết ngắn, giàu cảm xúc để người nghe nhớ lâu.</p></div>
+<blockquote>“Nếu niềm tự hào có hình dáng thì đó chính là lá cờ đỏ sao vàng. Nếu có kiếp sau, vẫn mong là người Việt Nam.”</blockquote>
+<p>Và đôi khi, một câu dí dỏm đúng nhịp cũng là kỹ năng giao tiếp: khi cần từ chối hay trì hoãn, một câu vui như
+<em>“Biết tại sao người đẹp gái thường bận không? …Tại giờ mình cũng đang bận”</em> giúp giữ không khí thoải mái mà vẫn
+truyền được thông điệp.</p>
+
+  <div class="sources"><span class="ttl">Video nguồn (4)</span><ul><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7551809637000023304" target="_blank" rel="noopener">Làm gì với 200tr 😁</a><span class="v">▶ 16.2K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7545428768580570376" target="_blank" rel="noopener">chúc mọi người một ngày quốc khánh bình an</a><span class="v">▶ 4.5K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7540308866576207122" target="_blank" rel="noopener">Nếu có kiếp sau, vẫn mong là người Việt Nam! duet @Thuần</a><span class="v">▶ 4.3K</span></li><li><a href="https://www.tiktok.com/@cothaogiaotiep/video/7569858191144635655" target="_blank" rel="noopener">Lý do lúc nào Cô Thảo cũng bận🤭</a><span class="v">▶ 3.8K</span></li></ul></div>
+</section>
+
+  <section>
+    <div class="chap-no">Lời cuối</div>
+    <h2 class="chap">Học giao tiếp là học cả đời</h2>
+    <p>Xuyên suốt kênh của Cô Thảo là một niềm tin giản dị: giao tiếp không phải năng khiếu trời cho, mà là <strong>kỹ năng luyện được</strong> — từ hơi thở, khẩu hình, tốc độ nói cho tới cách chọn câu chữ trong từng tình huống. Người nói hay không phải người có giọng đẹp bẩm sinh, mà là người chịu khó tập mỗi ngày 5 phút, dám nhận phần nói trong nhóm, và luôn tự hỏi <em>“người nghe sẽ cảm thấy gì?”</em> trước khi mở lời. Cẩm nang này gom lại những nguyên tắc đó để bạn luyện dần.</p>
+    <div class="disclaimer">⚠️ <strong>Lưu ý:</strong> Đây là bản đúc kết từ 62 video TikTok ngắn.
+    Lời khuyên giao tiếp luôn phụ thuộc ngữ cảnh — hãy thử, quan sát phản ứng người nghe và điều chỉnh cho hợp với mình.
+    Để xem trọn vẹn ví dụ và biểu cảm, hãy bấm vào link video nguồn ở cuối mỗi chương.</div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  Cẩm nang tổng hợp từ 62 video của kênh
+  <a href="https://www.tiktok.com/@cothaogiaotiep" target="_blank" rel="noopener">@cothaogiaotiep</a>
+  · Chỉ phục vụ học tập &amp; tham khảo.
+</div></footer>
+
+<a href="#" class="top sans" id="toTop" aria-label="Lên đầu trang">↑</a>
+<script>
+  const bar=document.getElementById('bar'), toTop=document.getElementById('toTop');
+  addEventListener('scroll',()=>{
+    const h=document.documentElement, st=h.scrollTop, sh=h.scrollHeight-h.clientHeight;
+    bar.style.width=(sh>0?(st/sh*100):0)+'%';
+    toTop.classList.toggle('show', st>600);
+  });
+</script>
+</body>
+</html>
