@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bông hoa nhỏ ham học — đúc kết từ @ngulong.official</title>
+<meta name="description" content="Cẩm nang nhân sinh &amp; tu tâm, hệ thống hoá từ 455 video của kênh TikTok @ngulong.official (“Ngũ Long”) — triết lý sống, Phật-Đạo-Nho và hồn cốt văn hoá Việt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
+<style>
+  :root{
+    --bg:#faf6f3; --paper:#fffdfb; --ink:#2a2320; --muted:#6f6358;
+    --accent:#9c3b2e; --accent2:#7a2c22; --accent-soft:#f0ddd6; --line:#e8dcd2;
+    --quote:#7a2c22; --chip:#f5e7e1; --shadow:0 1px 3px rgba(80,40,40,.07),0 8px 30px rgba(80,40,40,.06);
+    --maxw:760px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{--bg:#181311;--paper:#211a18;--ink:#efe5df;--muted:#ad9f95;--accent:#e0876f;
+      --accent2:#e8a18d;--accent-soft:#3a241d;--line:#332823;--quote:#e0876f;--chip:#2c1f1a;
+      --shadow:0 1px 3px rgba(0,0,0,.3),0 8px 30px rgba(0,0,0,.25);}
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Lora","Times New Roman",Georgia,serif;
+    line-height:1.74;font-size:18px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .sans{font-family:"Be Vietnam Pro",ui-sans-serif,system-ui,sans-serif}
+
+  /* Cover */
+  .cover{min-height:90vh;display:flex;flex-direction:column;justify-content:center;
+    text-align:center;padding:64px 22px;border-bottom:1px solid var(--line)}
+  .cover .kicker{letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;
+    color:var(--accent);font-family:"Be Vietnam Pro",sans-serif;margin-bottom:26px}
+  .cover h1{font-size:clamp(2.1rem,6vw,3.5rem);line-height:1.1;margin:.1em 0 .4em;font-weight:700}
+  .cover .sub{color:var(--muted);font-size:1.12rem;max-width:600px;margin:0 auto 30px}
+  .cover .meta{font-family:"Be Vietnam Pro",sans-serif;font-size:.82rem;color:var(--muted);
+    border-top:1px solid var(--line);padding-top:20px;max-width:560px;margin:18px auto 0}
+  .stats{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;margin:14px 0 0}
+  .stats b{display:block;font-size:1.6rem;color:var(--accent);font-family:"Be Vietnam Pro",sans-serif}
+  .stats span{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-family:"Be Vietnam Pro",sans-serif}
+
+  /* TOC */
+  .toc{background:var(--paper);border:1px solid var(--line);border-radius:14px;
+    padding:26px 30px;margin:46px 0;box-shadow:var(--shadow)}
+  .toc h2{margin:0 0 16px;font-size:.95rem;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--accent);font-family:"Be Vietnam Pro",sans-serif}
+  .toc ol{margin:0;padding:0;list-style:none}
+  .toc li{margin:.1em 0;border-bottom:1px solid var(--line)}
+  .toc li:last-child{border-bottom:0}
+  .toc a{color:var(--ink);text-decoration:none;display:flex;gap:14px;align-items:baseline;padding:.6em 0}
+  .toc a:hover{color:var(--accent)}
+  .toc .n{font-family:"Be Vietnam Pro",sans-serif;font-size:.8rem;color:var(--accent);font-weight:600;flex:none;width:1.8em}
+
+  /* Sections */
+  section{padding:46px 0;border-top:1px solid var(--line)}
+  .chap-no{font-family:"Be Vietnam Pro",sans-serif;font-size:.74rem;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--accent)}
+  h2.chap{font-size:clamp(1.5rem,4vw,2.1rem);line-height:1.2;margin:.18em 0 .5em;font-weight:700}
+  h3{font-size:1.18rem;margin:1.8em 0 .4em;color:var(--ink);font-weight:600}
+  p{margin:.75em 0}
+  .lead{font-size:1.08rem;color:var(--muted);font-style:italic;margin-bottom:1.2em}
+  ul.clean{list-style:none;padding-left:0}
+  ul.clean li{padding-left:1.5em;position:relative;margin:.55em 0}
+  ul.clean li::before{content:"›";position:absolute;left:0;color:var(--accent);font-weight:700;font-size:1.1em}
+  strong{color:var(--ink)}
+
+  blockquote{margin:1.2em 0;padding:.5em 0 .5em 1.15em;border-left:3px solid var(--accent);
+    color:var(--quote);font-style:italic;font-size:1.04rem}
+
+  .principle{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:12px;padding:16px 22px;margin:1.2em 0;box-shadow:var(--shadow)}
+  .principle .ttl{font-weight:700;color:var(--accent);font-family:"Be Vietnam Pro",sans-serif;font-size:.95rem}
+  .principle p{margin:.35em 0 0}
+
+  .script{background:var(--chip);border-radius:12px;padding:16px 20px;margin:1.3em 0;
+    font-family:"Be Vietnam Pro",sans-serif;font-size:.96rem}
+  .script .ttl{font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.7rem;
+    color:var(--accent);display:block;margin-bottom:10px}
+  .script .say{display:block;margin:.5em 0;padding-left:1.1em;border-left:2px solid var(--accent-soft);
+    color:var(--ink)}
+
+  .apply{background:linear-gradient(180deg,var(--accent-soft),transparent);border:1px solid var(--line);
+    border-radius:12px;padding:18px 22px;margin:1.5em 0;
+    font-family:"Be Vietnam Pro",sans-serif;font-size:.95rem}
+  .apply .ttl{font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;
+    color:var(--accent);display:block;margin-bottom:10px}
+  .apply ul{margin:.3em 0;padding-left:1.2em}
+  .apply li{margin:.4em 0}
+
+  .avoid{font-family:"Be Vietnam Pro",sans-serif;font-size:.92rem;color:var(--muted);
+    background:transparent;border:1px dashed var(--line);border-radius:12px;padding:14px 20px;margin:1.2em 0}
+  .avoid .ttl{font-weight:700;color:#b4564e;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:8px}
+  .avoid ul{margin:.2em 0;padding-left:1.2em} .avoid li{margin:.3em 0}
+
+  .sources{margin:2em 0 .4em;padding:16px 20px;border:1px dashed var(--line);border-radius:12px;
+    font-family:"Be Vietnam Pro",sans-serif;font-size:.9rem}
+  .sources .ttl{display:block;font-weight:700;color:var(--accent);font-size:.72rem;letter-spacing:.08em;
+    text-transform:uppercase;margin-bottom:10px}
+  .sources ul{list-style:none;margin:0;padding:0}
+  .sources li{margin:.1em 0;display:flex;justify-content:space-between;gap:14px;align-items:baseline;
+    border-bottom:1px solid var(--line);padding:.5em 0}
+  .sources li:last-child{border-bottom:0}
+  .sources a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--accent-soft)}
+  .sources a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+  .sources .v{color:var(--muted);font-size:.78rem;white-space:nowrap;flex-shrink:0}
+
+  .disclaimer{font-family:"Be Vietnam Pro",sans-serif;font-size:.9rem;background:var(--chip);
+    border-radius:12px;padding:16px 20px;margin:1.4em 0;color:var(--muted)}
+
+  footer{padding:54px 22px 76px;text-align:center;color:var(--muted);border-top:1px solid var(--line);
+    font-family:"Be Vietnam Pro",sans-serif;font-size:.82rem}
+  footer a{color:var(--accent)}
+
+  #bar{position:fixed;top:0;left:0;height:3px;background:var(--accent);width:0;z-index:50;transition:width .1s}
+  a.top{position:fixed;right:18px;bottom:18px;background:var(--accent);color:#fff;width:44px;height:44px;
+    border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;
+    box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .3s;font-size:1.2rem}
+  a.top.show{opacity:.92;pointer-events:auto}
+  @media(max-width:600px){body{font-size:17px}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+
+<header class="cover">
+  <div class="kicker">Cẩm nang đúc kết</div>
+  <h1>Bông hoa nhỏ ham học</h1>
+  <div class="sub">Cẩm nang nhân sinh &amp; tu tâm, hệ thống hoá từ 455 video của kênh TikTok @ngulong.official (“Ngũ Long”) — triết lý sống, Phật-Đạo-Nho và hồn cốt văn hoá Việt.</div>
+  <div class="stats">
+    <div><b>455</b><span>video nguồn</span></div>
+    <div><b>10</b><span>chương chủ đề</span></div>
+    <div><b>299.3M+</b><span>tổng lượt xem</span></div>
+  </div>
+  <div class="meta">Tài liệu tổng hợp phục vụ học tập &amp; chiêm nghiệm cá nhân. Mọi tư tưởng &amp; câu chữ thuộc về tác giả kênh
+  <strong>@ngulong.official</strong> (Ngũ Long — "bông hoa nhỏ ham học", gắn với nhóm phục dựng Lạc Việt cổ trận); bản đúc kết này chỉ sắp xếp lại
+  theo chủ đề để dễ ngẫm. Lời thoại được ghi lại từ video nên đôi chỗ có thể sai sót, nhất là các từ Hán-Việt &amp; thuật ngữ Phật-Đạo.</div>
+</header>
+
+<div class="wrap">
+  <nav class="toc">
+    <h2>Mục lục</h2>
+    <ol><li><a href="#ch1"><span class="n">01</span> Sống thuận tự nhiên &amp; nghệ thuật buông tay</a></li><li><a href="#ch2"><span class="n">02</span> Tự lo lấy mình: giá trị, thực lực &amp; lòng tự trọng</a></li><li><a href="#ch3"><span class="n">03</span> Tu cái tâm trước khi sửa cái cảnh</a></li><li><a href="#ch4"><span class="n">04</span> Gieo gì gặt nấy, được mất vô thường</a></li><li><a href="#ch5"><span class="n">05</span> Giữ mình tỉnh táo giữa thị phi</a></li><li><a href="#ch6"><span class="n">06</span> Lời nói, lòng tốt &amp; ranh giới</a></li><li><a href="#ch7"><span class="n">07</span> Yêu bằng trí tuệ, không bằng ảo tưởng</a></li><li><a href="#ch8"><span class="n">08</span> Gốc rễ: đạo làm cha mẹ, đạo làm con</a></li><li><a href="#ch9"><span class="n">09</span> Tín mà có tuệ: nhân quả, số mệnh &amp; thờ cúng</a></li><li><a href="#ch10"><span class="n">10</span> Văn hoá còn, dân tộc còn</a></li></ol>
+  </nav>
+
+<section id="ch1">
+  <div class="chap-no">Chương 01 · Nhân sinh quan</div>
+  <h2 class="chap">Sống thuận tự nhiên &amp; nghệ thuật buông tay</h2>
+  <p class="lead">Phần lớn nỗi khổ của con người không đến từ việc thiếu, mà đến từ việc cưỡng cầu — cố nắm chặt thứ vốn dĩ không thuộc về mình.</p>
+  
+<p>Ngũ Long hay nói về một nghịch lý: càng siết chặt thì càng tuột mất, càng buông lỏng thì lại càng giữ được.
+Anh ví tâm tham cầu như bàn tay nắm cát — bóp càng mạnh, cát càng chảy hết qua kẽ tay.</p>
+
+<blockquote>"Cách tốt nhất để giữ được cát là mở lòng bàn tay." <cite>— Sống thuận tự nhiên</cite></blockquote>
+
+<p>"Thuận tự nhiên" ở đây không phải là buông xuôi, lười biếng hay phó mặc. Đó là biết phân biệt giữa
+<strong>nỗ lực đúng đắn</strong> và <strong>cố chấp cưỡng cầu</strong>: việc gì trong tầm tay thì làm hết
+sức, còn kết quả thì để tùy duyên. Người sống được như vậy giảm hẳn tâm kiểm soát và kỳ vọng — hai thứ
+âm thầm bào mòn sự bình an nhất.</p>
+
+<div class="principle">
+  <span class="ttl">Nguyên tắc gốc</span>
+  <p>Cảnh giới cao của nhân sinh là <em>"không cầu mà được"</em>: làm điều nên làm với tâm vô cầu, rồi an nhiên
+  đón nhận kết quả. Cưỡng cầu sinh khổ; biết đủ sinh an.</p>
+</div>
+
+<h3>Cái tôi càng to, người càng khổ</h3>
+<p>Một chủ đề lặp đi lặp lại trên kênh là <strong>sĩ diện và bản ngã</strong>. Ngũ Long từng đi làm shipper,
+làm lao động chân tay, và rút ra rằng việc đó "kéo con người về thực tại", rèn sức bền tâm lý, giúp buông bớt
+cái tôi. Lao động chân chính chẳng có gì đáng xấu hổ — đáng ngại là để sĩ diện trói buộc mình.</p>
+
+<blockquote>"Khi bạn không còn ngại người ta nghĩ gì về mình nữa thì cái chấp niệm của bạn cũng chẳng còn tồn tại."
+<cite>— Mình làm shipper nhé</cite></blockquote>
+
+<h3>Tỉnh táo trước "miếng mồi" quá ngọt</h3>
+<p>Anh cảnh báo nhiều về ảo tưởng làm giàu nhanh — đa cấp, "cơ hội hiếm", "không mua là dại". Quy luật rất giản dị:
+lợi ích càng lớn mà tới càng dễ thì càng đáng nghi.</p>
+
+<blockquote>"Bất kỳ nguồn lợi khổng lồ nào tự nhiên tới mà không cần đầu tư công sức hay trí tuệ thì chỉ có đi lừa."
+<cite>— Đa cấp</cite></blockquote>
+
+<div class="apply">
+  <span class="ttl">Áp dụng ngay</span>
+  <ul>
+    <li>Khi muốn nắm giữ điều gì (người, vật, danh vọng), tự hỏi: "Mình có sẵn sàng buông nó được không?" Nếu không, đó là chấp.</li>
+    <li>Tách bạch <strong>nỗ lực</strong> và <strong>cưỡng cầu</strong>: làm hết phần mình, thả lỏng phần kết quả.</li>
+    <li>Gặp "món hời" tự nhiên rơi xuống — dừng lại, hỏi nguồn gốc và cơ chế tạo ra nó trước khi tham.</li>
+    <li>Mua ít, chọn kỹ. Biết đủ là một dạng tự do: không bị vật chất kéo mình chạy theo cảm giác mới.</li>
+  </ul>
+</div>
+
+  <div class="sources"><span class="ttl">Video nguồn (24)</span><ul><li><a href="https://www.tiktok.com/@ngulong.official/video/7327292618121940242" target="_blank" rel="noopener">Đa cấp</a><span class="v">▶ 3.2M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7313187335418481921" target="_blank" rel="noopener">Đẹp</a><span class="v">▶ 3.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7277941709726665986" target="_blank" rel="noopener">Mình làm síp pơ nhé 😬</a><span class="v">▶ 2.6M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7340649729157647624" target="_blank" rel="noopener">Sống thuận tự nhiên</a><span class="v">▶ 2.4M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7303175210734210306" target="_blank" rel="noopener">Hi si.nh</a><span class="v">▶ 2.2M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7336203042175323400" target="_blank" rel="noopener">Chaien- kẻ bị xa lánh</a><span class="v">▶ 2.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7438626907979058450" target="_blank" rel="noopener">Chấp-buông-hạnh phích</a><span class="v">▶ 1.9M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7289815222121024769" target="_blank" rel="noopener">&#x27;Xứng đáng&#x27;</a><span class="v">▶ 1.8M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7302809153997704449" target="_blank" rel="noopener">Biết địch biết ta</a><span class="v">▶ 1.7M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7468682322922048776" target="_blank" rel="noopener">Éat</a><span class="v">▶ 1.7M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7320614553442733320" target="_blank" rel="noopener">Nương tựa</a><span class="v">▶ 1.6M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7365512942219054343" target="_blank" rel="noopener">Cái tôi</a><span class="v">▶ 1.6M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7315788035868724482" target="_blank" rel="noopener">Sống trong quá khứ</a><span class="v">▶ 1.5M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7322467132074151186" target="_blank" rel="noopener">Sướng khổ tại tâm</a><span class="v">▶ 1.5M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7401138880226790674" target="_blank" rel="noopener">Sống cảm tính</a><span class="v">▶ 1.5M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7420062923621420306" target="_blank" rel="noopener">Sống mòn</a><span class="v">▶ 1.5M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7364038172298218759" target="_blank" rel="noopener">Giàu nghèo &amp; hạnh phích</a><span class="v">▶ 1.3M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7354380756766002450" target="_blank" rel="noopener">Đẹp trai</a><span class="v">▶ 1.2M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7361060416488852754" target="_blank" rel="noopener">Xây kênh nhé 😂</a><span class="v">▶ 1.2M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7297241902427016450" target="_blank" rel="noopener">7297241902427016450</a><span class="v">▶ 1.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7299092313194663169" target="_blank" rel="noopener">Góc thực tế: Mơ có trách nhiệm</a><span class="v">▶ 1.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7321738023744376071" target="_blank" rel="noopener">Sợ</a><span class="v">▶ 1.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7341389633495764231" target="_blank" rel="noopener">Biết đủ</a><span class="v">▶ 1.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7347328650636741896" target="_blank" rel="noopener">Giàu</a><span class="v">▶ 1.1M</span></li></ul></div>
+</section>
+
+<section id="ch2">
+  <div class="chap-no">Chương 02 · Nhân sinh quan</div>
+  <h2 class="chap">Tự lo lấy mình: giá trị, thực lực &amp; lòng tự trọng</h2>
+  <p class="lead">Thế giới bên ngoài là tấm gương phản chiếu nội tâm. Muốn đời đối tốt với mình, trước hết phải tự trở thành người xứng đáng.</p>
+  
+<p>Nếu chương trước nói về <em>buông</em>, chương này nói về <em>xây</em>: xây thực lực, xây giá trị tự thân,
+để không phải sống đời lệ thuộc vào lời khen chê hay sự ban phát của người khác.</p>
+
+<blockquote>"Tất cả mọi thứ và con người đang xuất hiện trong cuộc sống của bạn đều là tấm gương phản chiếu để bạn
+thấy được tâm thức của mình." <cite>— "Xứng đáng"</cite></blockquote>
+
+<p>Từ góc đó, Ngũ Long khuyên: trước khi trách hoàn cảnh, hãy tự hỏi mình đã sống, nghĩ và hành xử đủ tốt chưa.
+Đừng dùng "số phận" làm cái cớ né tránh trách nhiệm tu sửa bản thân. Muốn có tình yêu, sự nghiệp hay đời sống
+tốt đẹp thì phải tu sửa tâm thức để <strong>tương xứng</strong> với điều mình mong cầu.</p>
+
+<h3>Lợi thế chỉ thành phúc khi đi cùng trí tuệ</h3>
+<p>Nói về nhan sắc, anh không phủ nhận đó là lợi thế — nhưng nhấn mạnh nó là con dao hai lưỡi nếu thiếu nội lực.</p>
+
+<blockquote>"Càng đẹp thì càng phải chăm học chăm làm, nâng cấp giá trị bản thân. Khi ấy con sẽ được quyền lựa chọn,
+thay vì trở thành lựa chọn của người ta." <cite>— "Đẹp"</cite></blockquote>
+
+<div class="principle">
+  <span class="ttl">Nguyên tắc gốc</span>
+  <p>Tự chủ tài chính + trí tuệ = bớt lệ thuộc vào miệng đời. Giá trị thật khiến bạn là người <em>chọn</em>,
+  không phải người chờ <em>được chọn</em>.</p>
+</div>
+
+<h3>Biết mình biết người — để giữ mình, không để ngạo mạn</h3>
+<p>Anh đọc lại "biết địch biết ta" theo cách rất đời: hiểu mình hiểu người không phải để chắc thắng, mà để biết
+khi nào tiến, khi nào lui, và quan trọng nhất là <strong>bảo toàn căn cơ</strong>.</p>
+
+<blockquote>"Giữ được cái mạng rồi hãy nghĩ tới chuyện chiến thắng sau cùng." <cite>— Biết địch biết ta</cite></blockquote>
+
+<div class="apply">
+  <span class="ttl">Áp dụng ngay</span>
+  <ul>
+    <li>Trước khi trách người/hoàn cảnh, soi lại tâm mình — nó là tấm gương.</li>
+    <li>Đầu tư vào thực lực (kỹ năng, sức khoẻ, tài chính) thay vì chỉ trau chuốt vẻ ngoài.</li>
+    <li>Còn người, còn của, còn cơ hội — đừng đốt sạch vốn liếng cho một trận thắng nhất thời.</li>
+    <li>Ngủ đủ, vận động, sống có nhịp. Thân tỉnh thì tâm mới sáng.</li>
+  </ul>
+</div>
+
+  <div class="sources"><span class="ttl">Video nguồn (24)</span><ul><li><a href="https://www.tiktok.com/@ngulong.official/video/7369594277162159367" target="_blank" rel="noopener">Mất gì đâu?</a><span class="v">▶ 1.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7386673581477924103" target="_blank" rel="noopener">Loser</a><span class="v">▶ 1.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7292782170865782017" target="_blank" rel="noopener">Muốn tự do</a><span class="v">▶ 1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7330258754476264722" target="_blank" rel="noopener">Vạn pháp</a><span class="v">▶ 1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7338793154985954567" target="_blank" rel="noopener">Khủng hoảng thừa</a><span class="v">▶ 1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7371821372374387975" target="_blank" rel="noopener">Hạnh phích</a><span class="v">▶ 1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7433429528921345298" target="_blank" rel="noopener">Lí tưởng &amp; tự nhiên</a><span class="v">▶ 1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7391864592562949384" target="_blank" rel="noopener">Khó dễ</a><span class="v">▶ 973.3K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7381847131377716498" target="_blank" rel="noopener">Tự tin</a><span class="v">▶ 964.9K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7499490669174590727" target="_blank" rel="noopener">Huy chương</a><span class="v">▶ 959.2K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7384074848965889287" target="_blank" rel="noopener">Nhiều</a><span class="v">▶ 956.6K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7324325670996233480" target="_blank" rel="noopener">Thưởng phạt</a><span class="v">▶ 956K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7364775792548629767" target="_blank" rel="noopener">Hứng thú làm việc</a><span class="v">▶ 953.9K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7336575424756976914" target="_blank" rel="noopener">Cân bằng</a><span class="v">▶ 945.3K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7325066000284667144" target="_blank" rel="noopener">Quan trọng</a><span class="v">▶ 937.5K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7345110089860238610" target="_blank" rel="noopener">Ừ thì tỉnh thức</a><span class="v">▶ 937.1K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7486131619787590919" target="_blank" rel="noopener">Hồng nhan</a><span class="v">▶ 934.8K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7274976756380060930" target="_blank" rel="noopener">Bạn thực sự muốn gì?</a><span class="v">▶ 912.9K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7293527290976439553" target="_blank" rel="noopener">Muốn làm gì là làm ngay</a><span class="v">▶ 893.8K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7377387833197186312" target="_blank" rel="noopener">Bất ổn là ổn</a><span class="v">▶ 885.3K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7337308877697895688" target="_blank" rel="noopener">Mong cầu</a><span class="v">▶ 882.9K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7382592438747090194" target="_blank" rel="noopener">Hoang tưởng</a><span class="v">▶ 879.9K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7347699395992767752" target="_blank" rel="noopener">Không tiề.n</a><span class="v">▶ 863.1K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7297988551625477377" target="_blank" rel="noopener">Học</a><span class="v">▶ 805.4K</span></li></ul></div>
+</section>
+
+<section id="ch3">
+  <div class="chap-no">Chương 03 · Tu tâm dưỡng tính</div>
+  <h2 class="chap">Tu cái tâm trước khi sửa cái cảnh</h2>
+  <p class="lead">Giỏi giang, hiểu biết mà còn chấp ngã, sân hận thì trí tuệ ấy lại hóa thành gánh nặng. Đỉnh cao của tu dưỡng nằm ở một chữ: Nhẫn.</p>
+  
+<p>Ngũ Long phân biệt rất rõ giữa <em>khôn</em> và <em>tỉnh</em>. Người khôn biết nhiều; người tỉnh biết
+dừng. Anh nói thẳng: càng giỏi mà càng chấp, càng so đo, thì cái giỏi đó chỉ làm mình thêm khổ.</p>
+
+<blockquote>"Còn chấp thì còn khổ. Học được cái chữ Nhẫn là đỉnh cao ở đời rồi." <cite>— Càng giỏi càng ngạo</cite></blockquote>
+
+<p>Gốc của khổ, theo anh, nằm ở chuỗi <strong>tham → sân → si</strong>. Tham cầu không được như ý thì sinh sân hận;
+sân hận che mờ thì sinh si mê. Cho nên tu không phải là diệt sạch ham muốn ngay, mà là tập <em>thấy rõ</em> nó
+để nó tự yếu đi.</p>
+
+<div class="principle">
+  <span class="ttl">Nguyên tắc gốc</span>
+  <p>"Còn tham thì còn sân, còn sân thì còn si." Mỗi lần ai đó làm mình nổi giận, đó là một bài kiểm tra cho thấy
+  tâm mình còn yếu chỗ nào — không phải cái cớ để trả đũa.</p>
+</div>
+
+<h3>Nghiệp của họ, và nghiệp của mình</h3>
+<p>Một câu của kênh được chia sẻ rất nhiều, gói gọn toàn bộ tinh thần "giữ mình" trước tiêu cực:</p>
+
+<blockquote>"Người khác đối xử với bạn thế nào thì đấy là nghiệp của họ; còn bạn đối xử với họ thế nào lại là nghiệp
+của bạn." <cite>— Tử tế bị xử tệ</cite></blockquote>
+
+<h3>Nhẫn không phải nhu nhược</h3>
+<p>Anh cẩn thận tách "nhẫn" khỏi "hèn". Nhường nhịn chỉ quý khi xuất phát từ tự nguyện và lòng thương; còn ép mình
+chịu thiệt để được tiếng tốt thì chỉ sinh tổn thương âm thầm.</p>
+
+<blockquote>"Không tranh giành quyền lợi với người khác, nhưng không có nghĩa là chấp nhận mất quyền lợi của bản thân."
+<cite>— Nhường nhịn</cite></blockquote>
+
+<div class="avoid">
+  <span class="ttl">Dễ hiểu sai</span>
+  <ul>
+    <li>Nhầm "buông bỏ" thành mặc kệ, vô trách nhiệm. Buông là buông <em>tâm chấp</em>, không phải bỏ bổn phận.</li>
+    <li>Nhầm "nhẫn" thành cam chịu mọi điều. Nhẫn có giới hạn; biết nói rõ điều mình không chấp nhận cũng là tu.</li>
+  </ul>
+</div>
+
+<div class="apply">
+  <span class="ttl">Áp dụng ngay</span>
+  <ul>
+    <li>Khi bị khiêu khích: dừng một nhịp, quán chiếu "mình đang bảo vệ lẽ phải hay chỉ muốn thắng?".</li>
+    <li>Trước một ham muốn: hỏi "mình thật sự cần, hay chỉ muốn chứng minh mình hơn người?".</li>
+    <li>Giữ nghiệp của mình cho sạch — đừng để cách hành xử của người khác kéo phẩm chất mình đi xuống.</li>
+  </ul>
+</div>
+
+  <div class="sources"><span class="ttl">Video nguồn (22)</span><ul><li><a href="https://www.tiktok.com/@ngulong.official/video/7360687526186585352" target="_blank" rel="noopener">Nhường nhịn</a><span class="v">▶ 3.6M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7316902458272255233" target="_blank" rel="noopener">Càng giỏi càng ngoo</a><span class="v">▶ 2M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7389263514197593352" target="_blank" rel="noopener">Lục căn thanh tịnh</a><span class="v">▶ 1.8M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7306518081071746305" target="_blank" rel="noopener">Khổ trước sướng sau</a><span class="v">▶ 1.6M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7311706852344057089" target="_blank" rel="noopener">Cái đó của tao</a><span class="v">▶ 1.6M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7270152829682175238" target="_blank" rel="noopener">Tử tế bị xử tệ</a><span class="v">▶ 1.5M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7365884433557097746" target="_blank" rel="noopener">Thích</a><span class="v">▶ 1.4M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7257884561814899973" target="_blank" rel="noopener">Khiêm tốn</a><span class="v">▶ 1.3M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7270522696838991110" target="_blank" rel="noopener">Video cũ bị xoá nên reup lại nha :&lt;</a><span class="v">▶ 1.3M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7301318335910644993" target="_blank" rel="noopener">Ngủ</a><span class="v">▶ 1.3M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7333605952832261394" target="_blank" rel="noopener">Ừ</a><span class="v">▶ 1.2M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7279431194893192449" target="_blank" rel="noopener">Tu tập</a><span class="v">▶ 1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7305772592680406273" target="_blank" rel="noopener">Hướng ngoại hay hướng nội?</a><span class="v">▶ 1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7317285233445850370" target="_blank" rel="noopener">Đầu tư</a><span class="v">▶ 1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7342876387709160711" target="_blank" rel="noopener">Tĩnh lặng</a><span class="v">▶ 1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7332488006546345234" target="_blank" rel="noopener">Chọn con tim hay là nghe lý trí</a><span class="v">▶ 928.8K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7348813212013415688" target="_blank" rel="noopener">Xin lỗi</a><span class="v">▶ 903.5K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7283137449914551554" target="_blank" rel="noopener">Sức mạnh tinh thần</a><span class="v">▶ 823.6K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7417843449023483143" target="_blank" rel="noopener">Cảm thông</a><span class="v">▶ 766.3K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7402620216049470738" target="_blank" rel="noopener">Quân tử</a><span class="v">▶ 753.6K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7287589424215379201" target="_blank" rel="noopener">Đổ thừa</a><span class="v">▶ 737.3K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7273491739736837377" target="_blank" rel="noopener">Cơn lú của bản ngã</a><span class="v">▶ 671.2K</span></li></ul></div>
+</section>
+
+<section id="ch4">
+  <div class="chap-no">Chương 04 · Nhân quả · Vô thường</div>
+  <h2 class="chap">Gieo gì gặt nấy, được mất vô thường</h2>
+  <p class="lead">Nhân quả không phải sự trừng phạt huyền bí, mà là quy luật công bằng nhất: tự mình gieo nhân, tự mình gặt quả.</p>
+  
+<p>Với Ngũ Long, nhân quả không mang màu sắc mê tín. Đó là một quy luật vận hành lạnh lùng và công bằng:
+nhân — duyên — nghiệp — quả nối nhau, không thiên vị một ai.</p>
+
+<blockquote>"Nhân quả là cốt lõi của đạo Phật, là tuyệt đối công bình, không thiên lệch cho bất kỳ ai. Tự mình gieo
+nhân thì tự mình phải gánh nghiệp." <cite>— Nhân quả</cite></blockquote>
+
+<p>Anh lưu ý: đừng vội kết luận "nhân quả không đúng" chỉ vì chưa thấy kẻ ác chịu báo — quả có thể trổ muộn,
+đổi dạng, hoặc chưa đủ duyên. Và "số phận" thực ra cũng là nhân quả: <em>một chuỗi những nghiệp thiện ác đan
+xen mà thành</em>, nên hoàn toàn có thể chuyển bằng tu tâm, hành thiện, tích phúc.</p>
+
+<h3>Khổ sinh từ nhận thức, không phải từ hoàn cảnh</h3>
+<p>Một góc nhìn rất Phật học mà anh diễn đạt mộc mạc: phần lớn cái khổ là do mình <em>nghĩ</em> ra, do bám chấp
+và mong cầu sai. Thay đổi nhận thức thì khổ tự tan.</p>
+
+<blockquote>"Chỉ cần thay đổi nhận thức thì khổ sẽ tự hết. Không cần diệt — vì khổ có thật đâu mà diệt."
+<cite>— "Khổ?"</cite></blockquote>
+
+<div class="principle">
+  <span class="ttl">Pháp giữ tâm</span>
+  <p>"Tai không nghe thì ruột không trướng, mắt không thấy thì tim không đau." Tiết chế tai-mắt-miệng: bớt nghe
+  thị phi, bớt soi điều làm mình đau, bớt nói lời gây họa — là cách thực tế nhất để bớt khổ.</p>
+</div>
+
+<h3>Dọn "bãi rác" bằng tâm bình thản</h3>
+<p>Gặp chuyện bất như ý, anh ví như đi dọn một bãi rác người khác bày ra: cứ bình tâm dọn sạch phần cần dọn,
+xem đó như một dịp trả nghiệp, rồi đi tiếp — đừng chìm trong oán khí.</p>
+
+<div class="apply">
+  <span class="ttl">Áp dụng ngay</span>
+  <ul>
+    <li>Gặp nghịch cảnh: hỏi "phần trách nhiệm của mình trong việc này là gì?" trước khi trách trời trách người.</li>
+    <li>Hành thiện vô cầu — làm điều tốt vì đó là phẩm chất mình chọn, không phải để "cho một nhận mười".</li>
+    <li>Tiết chế thông tin tiêu cực: cái gì không thuộc tầm kiểm soát thì tập buông cho nhẹ.</li>
+  </ul>
+</div>
+
+  <div class="sources"><span class="ttl">Video nguồn (18)</span><ul><li><a href="https://www.tiktok.com/@ngulong.official/video/7351783788126506258" target="_blank" rel="noopener">Dọn rác</a><span class="v">▶ 3.8M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7480196953314217223" target="_blank" rel="noopener">Mắt thấy, tai nghe, miệng nói, tâm đau...</a><span class="v">▶ 3.8M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7272758413304564994" target="_blank" rel="noopener">Tốt bụng kh.ổ tâm</a><span class="v">▶ 2.3M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7318016811243523329" target="_blank" rel="noopener">Chẳng ai là hiền. Chẳng qua họ đủ tỉnh để tự quán lại mình thôi</a><span class="v">▶ 2M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7276465436676345090" target="_blank" rel="noopener">Khổ?</a><span class="v">▶ 1.6M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7307633188359179521" target="_blank" rel="noopener">Số phận và tử vi</a><span class="v">▶ 1.6M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7335826289263201543" target="_blank" rel="noopener">Nhân quả</a><span class="v">▶ 1.5M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7297611773933341953" target="_blank" rel="noopener">Phúc</a><span class="v">▶ 1.2M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7354010226430954760" target="_blank" rel="noopener">Số</a><span class="v">▶ 1.2M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7294272560353529090" target="_blank" rel="noopener">Các bạn vào ủng hộ kênh Diutubee &#x27;Ngự Long&#x27; giúp mình nhé. Mãi yêu 🫶🏻...</a><span class="v">▶ 1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7308742979034811650" target="_blank" rel="noopener">Tập khí và nhân quả</a><span class="v">▶ 943.7K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7251968120439622918" target="_blank" rel="noopener">Kẻ không vì mình, trời tr.u đất d*ệt</a><span class="v">▶ 864K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7281656341045775618" target="_blank" rel="noopener">Chênh vênh</a><span class="v">▶ 851K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7290558786857602306" target="_blank" rel="noopener">Trời thương...</a><span class="v">▶ 846.1K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7265331187575508225" target="_blank" rel="noopener">Ngo.ại tình</a><span class="v">▶ 761.9K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7272378674261806338" target="_blank" rel="noopener">Không tốt mà lại tốt</a><span class="v">▶ 672.3K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7289083179791682817" target="_blank" rel="noopener">Luật hấp dẫn</a><span class="v">▶ 670.8K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7404477264512945426" target="_blank" rel="noopener">Khổ - phước</a><span class="v">▶ 661.7K</span></li></ul></div>
+</section>
+
+<section id="ch5">
+  <div class="chap-no">Chương 05 · Đối nhân xử thế</div>
+  <h2 class="chap">Giữ mình tỉnh táo giữa thị phi</h2>
+  <p class="lead">Không ai có nghĩa vụ phải hiểu hay thương bạn. Bớt kỳ vọng vào người đời là bước đầu để thôi tự làm khổ mình.</p>
+  
+<p>Ngũ Long nhìn các mối quan hệ xã hội bằng con mắt vừa tỉnh táo vừa từ bi. Anh nói thẳng một sự thật khó nghe
+nhưng giải phóng:</p>
+
+<blockquote>"Không ai phải có trách nhiệm hiểu hay yêu thương bạn cả. Ai cũng muốn hưởng phúc với bạn, nhưng không ai
+muốn chịu khổ cùng." <cite>— Chán chả buồn nói</cite></blockquote>
+
+<p>Hiểu điều đó không phải để bi quan, mà để bớt mong cầu được tất cả mọi người công nhận — kỳ vọng ấy chính là
+mầm của oán trách. Trong công sở hay ngoài xã hội, cứ làm tốt việc của mình, phân biệt rõ người xã giao với người
+thật sự đồng cam cộng khổ.</p>
+
+<h3>Trước lời khen chê</h3>
+<p>Anh đưa một thước đo rất quân bình để khỏi bị lời người khác cuốn đi:</p>
+
+<blockquote>"Bạn không quá tốt như họ tưởng, nhưng cũng không quá tệ như họ nghĩ." <cite>— "Chờ ê chê"</cite></blockquote>
+
+<p>Khi bị chê, soi lại xem có phần nào đúng để sửa không; phần còn lại chỉ là cảm xúc của người ta — đừng để một
+lời phán xét định nghĩa toàn bộ con người mình.</p>
+
+<div class="principle">
+  <span class="ttl">Nguyên tắc gốc</span>
+  <p>Mang tâm bất mãn thì đi đâu cũng khổ: "Bạn mang cái khổ của mình đi thập phương tứ hải." Đổi chỗ làm, đổi
+  môi trường mà không đổi tâm thì khổ vẫn đi theo.</p>
+</div>
+
+<h3>Tham + thiếu hiểu biết = mồi cho kẻ thao túng</h3>
+<p>Từ câu chuyện bị "dắt mũi" mua ngọc ở Vân Nam, anh rút ra: khi ai đó đánh vào tình cảm, đồng hương, đạo nghĩa
+quá nhanh và quá ngọt, hãy giữ một khoảng tỉnh táo.</p>
+
+<blockquote>"Tham cộng với thiếu hiểu biết là dẫn tới cái màn thao túng đỉnh cấp như thế." <cite>— Nghệ thuật thao túng</cite></blockquote>
+
+<div class="apply">
+  <span class="ttl">Áp dụng ngay</span>
+  <ul>
+    <li>Hạ kỳ vọng "phải được hiểu" xuống — tự hiểu, tự thương mình trước.</li>
+    <li>Trước quyết định gấp gáp đầy cảm xúc ("cơ hội hiếm", "không mua là dại"), dừng lại một nhịp.</li>
+    <li>Chọn bạn mà chơi: gần người hiền tâm dễ sáng, gần người tật đố lòng dễ bất an.</li>
+  </ul>
+</div>
+
+  <div class="sources"><span class="ttl">Video nguồn (22)</span><ul><li><a href="https://www.tiktok.com/@ngulong.official/video/7312449226640739586" target="_blank" rel="noopener">Ngưng khóc mướn 👌🏻</a><span class="v">▶ 3.2M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7290186675500633345" target="_blank" rel="noopener">Nghệ thuật thao túng đỉnh cấp</a><span class="v">▶ 3M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7296866391553051906" target="_blank" rel="noopener">Chờ ê chê</a><span class="v">▶ 2.9M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7295752043367582977" target="_blank" rel="noopener">Nhảy việc</a><span class="v">▶ 1.9M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7387410492370717970" target="_blank" rel="noopener">Tốt cho mày</a><span class="v">▶ 1.9M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7370718332787445000" target="_blank" rel="noopener">Tật đố</a><span class="v">▶ 1.8M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7253826723182120198" target="_blank" rel="noopener">Giao tiếp k tốt nên làm thế nào?</a><span class="v">▶ 1.7M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7314676948989381890" target="_blank" rel="noopener">Chán chả buồn nói</a><span class="v">▶ 1.5M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7374053010063871239" target="_blank" rel="noopener">7374053010063871239</a><span class="v">▶ 1.5M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7395199967985470727" target="_blank" rel="noopener">Rõ ràng</a><span class="v">▶ 1.4M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7396315630997179655" target="_blank" rel="noopener">Kệ mẹ</a><span class="v">▶ 1.4M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7303541009919528194" target="_blank" rel="noopener">Lan man tí ngày 20/11. Chúc các thầy cô sức khoẻ và tâm huyết với ngh...</a><span class="v">▶ 1.3M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7282025206569258241" target="_blank" rel="noopener">Tư duy hỗn làm</a><span class="v">▶ 1.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7296122166431550722" target="_blank" rel="noopener">No caption</a><span class="v">▶ 1.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7310966967257664770" target="_blank" rel="noopener">Phôt&#x27; khách hàng</a><span class="v">▶ 1.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7374420004298673426" target="_blank" rel="noopener">Khích</a><span class="v">▶ 1.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7275351189783334146" target="_blank" rel="noopener">Lôm côm thôi</a><span class="v">▶ 1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7288335120468020482" target="_blank" rel="noopener">Động viên độ.c hạ.i</a><span class="v">▶ 1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7405962909353807112" target="_blank" rel="noopener">Lười yêu</a><span class="v">▶ 996.4K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7292421083548880129" target="_blank" rel="noopener">Dạy</a><span class="v">▶ 951K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7363661120462195975" target="_blank" rel="noopener">Niềm tin</a><span class="v">▶ 883.9K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7376274812362099975" target="_blank" rel="noopener">Đạp</a><span class="v">▶ 882.9K</span></li></ul></div>
+</section>
+
+<section id="ch6">
+  <div class="chap-no">Chương 06 · Đối nhân xử thế</div>
+  <h2 class="chap">Lời nói, lòng tốt &amp; ranh giới</h2>
+  <p class="lead">Lời nói là biểu hiện của tâm. Một câu nói mềm giữ được quan hệ; một câu nói nặng làm tổn thương rất lâu.</p>
+  
+<p>Nửa sau của nghệ thuật xử thế, theo Ngũ Long, nằm ở <strong>cách cho đi</strong> — cho lời, cho lòng tốt,
+cho lời khuyên — sao cho đúng và không thành gánh nặng cho người nhận.</p>
+
+<h3>Tốt cho mình chưa chắc tốt cho người</h3>
+<blockquote>"Cái mình tưởng là tốt thì chưa chắc đã là tốt với người ta. Đường ai nấy đi, chung một đoạn đường thì
+trân trọng, chứ đừng bắt ai phải đi mãi cùng mình." <cite>— Tốt cho mày</cite></blockquote>
+
+<p>Tử tế không đồng nghĩa với áp đặt. Lời khuyên chỉ có giá trị khi đúng thời điểm, đúng cách, và người nghe đủ
+trải nghiệm để tiếp nhận. Đừng lấy công thức sống của mình làm chuẩn chung cho thiên hạ.</p>
+
+<h3>Nói cho người ta dễ nghe</h3>
+<p>Về giao tiếp, anh đề cao sự mềm mỏng — không phải xu nịnh, mà là không cố tình làm người khác xấu hổ.</p>
+
+<blockquote>"Con người thích những kẻ nói năng dịu dàng, nhã nhặn, nói ngọt lọt tới xương." <cite>— Giao tiếp không tốt nên làm sao?</cite></blockquote>
+
+<div class="principle">
+  <span class="ttl">Nguyên tắc gốc</span>
+  <p>Góp ý là để mở đường cho người ta sửa, không phải để hạ bệ. Muốn nói lời hay, trước hết phải bớt nóng nảy,
+  bớt hơn thua trong lòng.</p>
+</div>
+
+<h3>Tử tế nhưng có giới hạn</h3>
+<p>Anh nhắc nhiều về "khóc mướn" — kiểu thương hại giả tạo xen vào chuyện nhà người khác — và về sự nhẫn nhịn
+không ranh giới: nhịn mãi mà không nói rõ thì bất mãn tích tụ, đến lúc bùng ra thành sân giận.</p>
+
+<div class="apply">
+  <span class="ttl">Áp dụng ngay</span>
+  <ul>
+    <li>Trước khi khuyên ai: hỏi "họ có thật sự muốn nghe, và đây có đúng lúc không?".</li>
+    <li>Tập nói tốt (hoặc công bằng) về người vắng mặt — đó là thước đo âm thầm của nhân cách.</li>
+    <li>Đặt ranh giới rõ ràng sớm, thay vì nhịn tới mức phát nổ.</li>
+    <li>Rời đi (công việc, quan hệ) trong đàng hoàng để giữ lại nhân duyên tốt.</li>
+  </ul>
+</div>
+
+  <div class="sources"><span class="ttl">Video nguồn (22)</span><ul><li><a href="https://www.tiktok.com/@ngulong.official/video/7410043872715214088" target="_blank" rel="noopener">Ít bạn</a><span class="v">▶ 838.7K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7320986330144591122" target="_blank" rel="noopener">Thấy vậy mà không phải vậy</a><span class="v">▶ 811.5K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7372562073219255559" target="_blank" rel="noopener">Ai chả muốn</a><span class="v">▶ 795K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7521752479449632008" target="_blank" rel="noopener">Sòng phẳng</a><span class="v">▶ 758.9K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7319500912077049090" target="_blank" rel="noopener">Không sợ kẻ địch mạnh</a><span class="v">▶ 746.9K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7342139048900807954" target="_blank" rel="noopener">Tiêu cực</a><span class="v">▶ 724.1K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7352894480162311431" target="_blank" rel="noopener">Đàn ông là không tóc dài :))))</a><span class="v">▶ 701.9K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7300946264366042369" target="_blank" rel="noopener">Tâm lý bầy đàn</a><span class="v">▶ 656.7K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7246760772464905477" target="_blank" rel="noopener">Thảo mai?</a><span class="v">▶ 637K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7547727888754298130" target="_blank" rel="noopener">Hoà hợp</a><span class="v">▶ 606.7K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7300212817788144898" target="_blank" rel="noopener">Không muốn thì đừng</a><span class="v">▶ 602.7K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7346588805161356552" target="_blank" rel="noopener">Chờ ưi chưi hỏi</a><span class="v">▶ 569K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7318756824101014786" target="_blank" rel="noopener">Khen</a><span class="v">▶ 561.6K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7519536132665675026" target="_blank" rel="noopener">Trung</a><span class="v">▶ 561.2K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7517294433054870802" target="_blank" rel="noopener">Anh rất tốt...</a><span class="v">▶ 521.2K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7410794068747226375" target="_blank" rel="noopener">Điều tốt nhất</a><span class="v">▶ 517.1K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7273121069853134082" target="_blank" rel="noopener">Khoe khoang</a><span class="v">▶ 494.2K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7345472896745213192" target="_blank" rel="noopener">Phàm nhân &amp; Thần tiên</a><span class="v">▶ 490.7K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7306884879625555201" target="_blank" rel="noopener">BL học đường</a><span class="v">▶ 444.3K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7259761319614762241" target="_blank" rel="noopener">Không biết giao tiếp</a><span class="v">▶ 443.5K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7379985327496137991" target="_blank" rel="noopener">Trao đổi</a><span class="v">▶ 440.8K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7332857094816697608" target="_blank" rel="noopener">Của cho</a><span class="v">▶ 413.8K</span></li></ul></div>
+</section>
+
+<section id="ch7">
+  <div class="chap-no">Chương 07 · Tình cảm &amp; Hôn nhân</div>
+  <h2 class="chap">Yêu bằng trí tuệ, không bằng ảo tưởng</h2>
+  <p class="lead">Người ta yêu bạn vì điều gì thì cũng vì điều ấy mà rời bỏ bạn. Tình bền nằm ở chiều sâu thấu hiểu, không ở điều kiện bề mặt.</p>
+  
+<p>Đây là nhóm chủ đề có những video chạm tới hàng triệu lượt xem. Quan điểm xuyên suốt của Ngũ Long: tình yêu
+xây trên điều kiện thì cũng sụp đổ khi điều kiện đổi thay.</p>
+
+<blockquote>"Người ta yêu bạn vì thứ gì thì cũng vì cái thứ ấy mà bỏ rơi bạn thôi. Hãy chọn người yêu bạn từ chính sâu
+thẳm tâm hồn." <cite>— Tình yêu của đàn ông</cite></blockquote>
+
+<p>Anh phân biệt rạch ròi giữa "phù hợp để sống cùng" và "thật sự thấu hiểu, thương nhau". Đừng xây giá trị bản
+thân chỉ trên nhan sắc, sự hy sinh hay vai trò hậu phương — vì <em>"có điều kiện là có hạn sử dụng"</em>.</p>
+
+<h3>Yêu được cả phần không hoàn hảo</h3>
+<blockquote>"Yêu cái hợp gu thì dễ. Yêu được cả cái không hợp gu thì mới là đỉnh." <cite>— Yêu hơn tất thảy</cite></blockquote>
+
+<p>Tình yêu vừa là món quà vừa là bài học. Trước khi yêu sâu, nên tự hỏi mình đang yêu con người thật của họ
+hay chỉ yêu cái hình ảnh lý tưởng mình gán lên họ.</p>
+
+<div class="principle">
+  <span class="ttl">Duyên & Nghiệp</span>
+  <p>"Duyên không được chọn lựa — chỉ được chọn lựa đối mặt với nghiệp như thế nào thôi." Hôn nhân vừa là duyên
+  vừa là một hành trình cần đủ tỉnh táo và trách nhiệm, không phải chuyện cổ tích màu hồng.</p>
+</div>
+
+<h3>Chân thành nhưng thực tế</h3>
+<p>Anh không lãng mạn hóa nghèo khó, cũng không cổ vũ thực dụng. Cái anh nói là <strong>thực tế</strong>:</p>
+
+<blockquote>"Ta không thực dụng, nhưng phải thực tế. Giàu chưa chắc sướng, nhưng nghèo là chắc chắn sẽ khổ."
+<cite>— Nghe và ngẫm tí</cite></blockquote>
+
+<div class="apply">
+  <span class="ttl">Áp dụng ngay</span>
+  <ul>
+    <li>Hỏi mình: "Mình yêu con người họ, hay yêu cảm giác/giá trị họ mang lại?"</li>
+    <li>Đừng xây toàn bộ giá trị bản thân trên một vai trò (đẹp, đảm, hy sinh) — dễ bị thay thế.</li>
+    <li>Sau chia tay: chấp nhận vô thường, dứt khoát với duyên cũ để bảo vệ tâm mình và nhân duyên mới.</li>
+    <li>Muốn gặp người tốt hơn, trước hết hãy làm cho mình tốt hơn.</li>
+  </ul>
+</div>
+
+  <div class="sources"><span class="ttl">Video nguồn (20)</span><ul><li><a href="https://www.tiktok.com/@ngulong.official/video/7310594566871125250" target="_blank" rel="noopener">Tình yêu của đàn ông</a><span class="v">▶ 5.8M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7326179263718198536" target="_blank" rel="noopener">Yêu hơn tất thảy</a><span class="v">▶ 4.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7252708334116146438" target="_blank" rel="noopener">Nghe và ngẫm tí</a><span class="v">▶ 3.3M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7293912950975319297" target="_blank" rel="noopener">Các bạn vào ủng hộ kênh Diutubee &#x27;Ngự Long&#x27; giúp mình nhé. Cảm ơn các...</a><span class="v">▶ 2.9M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7359585345303891218" target="_blank" rel="noopener">Hôn nhân</a><span class="v">▶ 2.4M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7375182766276644114" target="_blank" rel="noopener">Yêu</a><span class="v">▶ 2.3M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7323946075151224072" target="_blank" rel="noopener">Hậu chia tay</a><span class="v">▶ 1.8M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7263103636249545985" target="_blank" rel="noopener">Con gái khó hiểu</a><span class="v">▶ 1.6M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7315045832636501249" target="_blank" rel="noopener">Tiền ít đòi hít (.) thơm</a><span class="v">▶ 1.3M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7325444558521683208" target="_blank" rel="noopener">Sướng khổ tình yêu</a><span class="v">▶ 1.2M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7332114716917075208" target="_blank" rel="noopener">Fa</a><span class="v">▶ 1.2M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7295008827836042498" target="_blank" rel="noopener">Mình đã lập kênh Diutubee Ngự Long cho các bạn dễ theo dõi nha. Cảm ơ...</a><span class="v">▶ 1.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7477587657107787015" target="_blank" rel="noopener">Yêu &#x27;cầu&#x27;</a><span class="v">▶ 944K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7249742378238561542" target="_blank" rel="noopener">Đàn ông giá trị cao</a><span class="v">▶ 901.5K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7589283675808828679" target="_blank" rel="noopener">Môn đăng hộ đối</a><span class="v">▶ 789.3K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7368490245207117063" target="_blank" rel="noopener">Yêu</a><span class="v">▶ 757.2K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7344366595793227016" target="_blank" rel="noopener">Mình đã bị vợ đuổi khỏi nhà vì k có quà r nhé 🥲</a><span class="v">▶ 713.7K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7234737935277378821" target="_blank" rel="noopener">90% đàn ông thường không để tâm tới điều này</a><span class="v">▶ 309K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7250878661610589446" target="_blank" rel="noopener">Anh nghè.o thế này...</a><span class="v">▶ 215.7K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7246012496962800902" target="_blank" rel="noopener">Bỗng dưng hết yêu?</a><span class="v">▶ 170.5K</span></li></ul></div>
+</section>
+
+<section id="ch8">
+  <div class="chap-no">Chương 08 · Gia đình &amp; Hiếu đạo</div>
+  <h2 class="chap">Gốc rễ: đạo làm cha mẹ, đạo làm con</h2>
+  <p class="lead">Thương con sai cách thì không phải là thương. Và dạy con, trước hết, là sửa chính mình.</p>
+  
+<p>Ngũ Long nói về gia đình bằng giọng của người vừa làm con vừa làm cha. Anh nhắc người trẻ một câu của tiền nhân:</p>
+
+<blockquote>"Cá không ăn muối cá ươn, con cãi cha mẹ trăm đường con hư. Điểm khác biệt nhất giữa vòng tay cha mẹ và
+người đời là cha mẹ cho bạn cơ hội sửa sai, còn người đời thì không." <cite>— Cá không ăn muối</cite></blockquote>
+
+<p>Tri thức trên mạng không thay được kinh nghiệm sống đã trả giá bằng thời gian. Nhưng anh cũng không bênh
+cha mẹ một chiều: với cha mẹ cần đạo lý ứng xử thỏa đáng, "đúng" không cho phép mình nói lời làm đau người thân.</p>
+
+<h3>Thương con là chuẩn bị cho con, không phải bao bọc con</h3>
+<blockquote>"Càng cho con sướng thì đấy mới là làm khổ nó. Thương mà sai cách thì không phải là thương."
+<cite>— Quen khổ / Được khổ</cite></blockquote>
+
+<p>Yêu con cần đi cùng trí tuệ: cho con va vấp vừa sức để rèn sức đề kháng trước đời, thay vì chắn hết mọi khó khăn
+khiến con mất năng lực tự lập. Kỷ luật đúng lúc là một dạng từ bi nghiêm khắc.</p>
+
+<div class="principle">
+  <span class="ttl">Thân giáo hơn khẩu giáo</span>
+  <p>"Cha mẹ không phải gương tốt thì con cái khó nên người tử tế." Muốn con thành người thế nào, trước hết mình
+  phải trở thành người đó đã. <em>Nhìn cây sửa đất, nhìn con sửa mình.</em></p>
+</div>
+
+<h3>Đừng "gắt gỏng với gia đình, bao dung với xã hội"</h3>
+<p>Anh chỉ ra một nghịch lý phổ biến: nhịn nhục ngoài đường rồi về trút bực lên người thương mình vô điều kiện.
+Thời gian bên gia đình là hữu hạn — đừng lấy sự bao dung của họ làm chỗ xả cảm xúc.</p>
+
+<div class="apply">
+  <span class="ttl">Áp dụng ngay</span>
+  <ul>
+    <li>Cha mẹ góp ý: nghe trọn vẹn trước, phản biện sau — đừng để tự ái chặn lời.</li>
+    <li>Với con: để con chịu trách nhiệm vừa sức; mỗi quyền lợi đi kèm một nghĩa vụ.</li>
+    <li>Muốn sửa con, sửa mình trước. Trẻ học từ điều cha mẹ <em>làm</em>, không phải điều cha mẹ <em>nói</em>.</li>
+    <li>Giữ hòa khí trong nhà như giữ phép lịch sự ngoài xã hội.</li>
+  </ul>
+</div>
+
+  <div class="sources"><span class="ttl">Video nguồn (14)</span><ul><li><a href="https://www.tiktok.com/@ngulong.official/video/7343621459287330066" target="_blank" rel="noopener">Cá không ăn muối</a><span class="v">▶ 2.9M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7350668913111321863" target="_blank" rel="noopener">Quen kh.ổ</a><span class="v">▶ 2.4M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7483528100815375624" target="_blank" rel="noopener">Được khổ</a><span class="v">▶ 1.3M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7318393006204177666" target="_blank" rel="noopener">Dạy con</a><span class="v">▶ 1.2M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7400025086834543880" target="_blank" rel="noopener">Chiều chuộng</a><span class="v">▶ 1.1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7244541050096766214" target="_blank" rel="noopener">Bao dung với xã hội, gắt gỏng với gia đình</a><span class="v">▶ 788K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7292040812882431233" target="_blank" rel="noopener">Chúc chị em 20/10 vui vẻ</a><span class="v">▶ 757.9K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7330631739368426759" target="_blank" rel="noopener">Bất tử</a><span class="v">▶ 564.9K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7610436452870098184" target="_blank" rel="noopener">Sinh con</a><span class="v">▶ 292K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7248598765177752838" target="_blank" rel="noopener">Xuất phát điểm của con chính là cha mẹ</a><span class="v">▶ 277K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7263472366586465538" target="_blank" rel="noopener">Trả lời @💙  Cha mẹ yêu con nhưng có hiểu con?</a><span class="v">▶ 185.3K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7419322788873293064" target="_blank" rel="noopener">7419322788873293064</a><span class="v">▶ 171.8K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7246410699159702789" target="_blank" rel="noopener">Hãy yêu thương người đàn ông của bạn nhé 🫶🏻</a><span class="v">▶ 162.1K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7445671583684840722" target="_blank" rel="noopener">Đi chăn ngựa cũng ngộ ra được mấy cái hay ho để áp vào chăn trẻ con. ...</a><span class="v">▶ 92.2K</span></li></ul></div>
+</section>
+
+<section id="ch9">
+  <div class="chap-no">Chương 09 · Phật pháp &amp; Tâm linh</div>
+  <h2 class="chap">Tín mà có tuệ: nhân quả, số mệnh &amp; thờ cúng</h2>
+  <p class="lead">Tín ngưỡng là tốt — nhưng tín mà thiếu trí tuệ thì chỉ còn là mê tín. Phật không độ người ngồi chờ; chỉ có người tự độ cho chính mình.</p>
+  
+<p>Ở mảng tâm linh, Ngũ Long giữ một lập trường tỉnh táo hiếm thấy trên mạng: trân trọng đạo Phật và tín ngưỡng
+dân gian, nhưng kiên quyết tách nó khỏi mê tín và tâm lý cầu cạnh.</p>
+
+<blockquote>"Tín là tốt, rất tốt. Nhưng tín mà không có tuệ thì cũng chỉ là mê tín mà thôi. Chỉ có người ta tự độ
+cho chính mình thôi." <cite>— Thành tâm</cite></blockquote>
+
+<p>Cầu nguyện, theo anh, nên là khởi tâm để <em>sửa mình và hành động</em>, không phải để phó mặc đời mình cho
+bề trên. Khi mong cầu điều gì, hãy hỏi: "Mình đã làm gì để xứng đáng với điều đó chưa?"</p>
+
+<h3>Số mệnh có thể sửa</h3>
+<blockquote>"Đừng đọ phước với người có nhiều phước. Bớt ngu mỗi ngày là khôn lên mỗi ngày." <cite>— Số mệnh</cite></blockquote>
+
+<p>Tin số mệnh nhưng không phó mặc số mệnh: phần con người làm được vẫn là tu thân, học hành, lao động và sống
+tử tế. Hiểu mình là ai — hoàn cảnh, năng lực, giới hạn — chính là nền tảng của việc "cải mệnh".</p>
+
+<div class="principle">
+  <span class="ttl">Gốc của thờ cúng</span>
+  <p>"Con người có tổ có tông, như cây có cội, như sông có nguồn." Thờ cúng đúng nghĩa không nằm ở lễ vật hay
+  cầu xin, mà ở lòng biết ơn và sự tiếp nối phúc đức — đạo hiếu của tiền nhân.</p>
+</div>
+
+<div class="avoid">
+  <span class="ttl">Anh cảnh báo</span>
+  <ul>
+    <li>Các khóa "chữa lành", "giác ngộ" cấp tốc bị thương mại hóa: "đem về đóng gói lại rồi bắt đầu kiếm tiền".</li>
+    <li>Đánh giá đạo hạnh qua hình thức đi chùa, lễ bái — hãy nhìn hành động <em>sau khi</em> bước ra khỏi nơi thờ tự.</li>
+  </ul>
+</div>
+
+<div class="apply">
+  <span class="ttl">Áp dụng ngay</span>
+  <ul>
+    <li>Cầu nguyện như một lời nhắc tự sửa mình, không phải hợp đồng đổi chác với thần thánh.</li>
+    <li>Nuôi một niềm tin khiến mình sống tử tế hơn, hòa ái hơn — đó là tín lực lành.</li>
+    <li>Cảnh giác lời hứa tâm linh "nhanh, rẻ, dễ"; tu tập thật cần thời gian và sự thành thật.</li>
+  </ul>
+</div>
+
+  <div class="sources"><span class="ttl">Video nguồn (10)</span><ul><li><a href="https://www.tiktok.com/@ngulong.official/video/7569996732730281223" target="_blank" rel="noopener">Số mệnh</a><span class="v">▶ 990.1K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7340293274529205512" target="_blank" rel="noopener">Xuất gia &amp; dục vọng</a><span class="v">▶ 975.8K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7280544686635355393" target="_blank" rel="noopener">Phật vẫn còn tham?</a><span class="v">▶ 348.3K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7398167082212347154" target="_blank" rel="noopener">Tầm sư học đạo</a><span class="v">▶ 336.5K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7631961619425332487" target="_blank" rel="noopener">Thờ cúng</a><span class="v">▶ 330K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7316531213894831361" target="_blank" rel="noopener">Tín lực</a><span class="v">▶ 298.5K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7426011285684227346" target="_blank" rel="noopener">Trải nghiệm gặp m.a đi các đấng</a><span class="v">▶ 219.4K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7561085425629105415" target="_blank" rel="noopener">Thành tâm</a><span class="v">▶ 218.7K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7269413199085112582" target="_blank" rel="noopener">Hiểu đúng về &quot;chúng sinh bình đẳng&quot;</a><span class="v">▶ 162.2K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7258648670843849989" target="_blank" rel="noopener">Khoá học &quot;chữa lành&quot;</a><span class="v">▶ 125.6K</span></li></ul></div>
+</section>
+
+<section id="ch10">
+  <div class="chap-no">Chương 10 · Văn hoá &amp; Cổ phong Việt</div>
+  <h2 class="chap">Văn hoá còn, dân tộc còn</h2>
+  <p class="lead">Phục dựng cổ phong, hiểu sử Việt, giữ lòng tự tôn dân tộc — với Ngũ Long, đó không phải hoài niệm, mà là trách nhiệm của mỗi thế hệ.</p>
+  
+<p>Gắn với nhóm "Lạc Việt cổ trận", Ngũ Long dành một phần kênh cho văn hoá truyền thống: phục dựng phục trang,
+giáp trụ, binh khí, lễ nghi xưa. Nhưng tinh thần không dừng ở hình thức.</p>
+
+<blockquote>"Văn hoá còn, dân tộc còn! Chẳng phải việc của riêng mình, riêng ai, mà là việc của cả đất nước."
+<cite>— Phục dựng văn hoá cổ trận</cite></blockquote>
+
+<p>Anh phản biện mạnh mẽ hai quan điểm: rằng thực dân "mang văn minh tới", và rằng "văn hoá Việt chỉ là bản sao
+Trung Hoa". Với anh, bản sắc Việt có gốc riêng từ địa lý, lịch sử, làng xã — và điều giữ nó sống không phải hàng
+rào, mà là lòng tự tôn.</p>
+
+<blockquote>"Xâm lược văn hóa sẽ không đáng sợ nếu lòng tự tôn dân tộc của chúng ta đủ cao. Không hiểu văn hóa thì
+dân tộc làm sao còn?" <cite>— Văn hoá Việt</cite></blockquote>
+
+<div class="principle">
+  <span class="ttl">Dân ta phải biết sử ta</span>
+  <p>Muốn kính ai, thờ ai, trước hết phải hiểu rõ lịch sử và bản chất nhân vật ấy. Anh nhắc tinh thần Trần Bình
+  Trọng — <em>"Ta thà làm quỷ nước Nam chứ không thèm làm vương đất Bắc"</em> — và kêu gọi tôn vinh đúng các anh
+  hùng dân tộc Việt.</p>
+</div>
+
+<h3>Tri ân bằng hành động</h3>
+<blockquote>"Cha ông đã dùng máu để đổi lấy độc lập cho dân tộc; vậy chúng ta cũng nên dùng trí tuệ mà đổi lấy sự
+hưng thịnh cho quốc gia." <cite>— Ai đi về Bắc ta đi với</cite></blockquote>
+
+<div class="apply">
+  <span class="ttl">Áp dụng ngay</span>
+  <ul>
+    <li>Yêu văn hoá bằng hành động cụ thể: tìm hiểu, học, phục dựng, truyền lại — không chỉ hoài niệm.</li>
+    <li>Tiếp nhận văn hoá ngoại lai có chọn lọc: phân biệt giao thoa, dung nạp với đánh mất gốc.</li>
+    <li>Tri ân tiền nhân không dừng ở cảm xúc, mà chuyển thành trách nhiệm sống, học và làm việc tử tế.</li>
+  </ul>
+</div>
+
+  <div class="sources"><span class="ttl">Video nguồn (8)</span><ul><li><a href="https://www.tiktok.com/@ngulong.official/video/7407074507434822930" target="_blank" rel="noopener">Chán chẳng buồn nói</a><span class="v">▶ 1M</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7580756586390375687" target="_blank" rel="noopener">Video hơi dài. Cảm ơn mọi người đã dành thời gian lắng nghe</a><span class="v">▶ 988.2K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7446791757481643271" target="_blank" rel="noopener">Nay cháu đã mượn được bộ giáp 😂 trông ra gì không các fren?</a><span class="v">▶ 351.3K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7582980831015144722" target="_blank" rel="noopener">Văn hoá Việt</a><span class="v">▶ 272.3K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7423406752206572818" target="_blank" rel="noopener">Thờ phụng</a><span class="v">▶ 171.2K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7573325313271450898" target="_blank" rel="noopener">Du Nam chí có thuyết rằng : ở Kinh đô nước Nam có những món khí cụ hì...</a><span class="v">▶ 105.9K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7545308039780289810" target="_blank" rel="noopener">Ai đi về Bắc ta đi với Thăm lại non sông giống Lạc Hồng Từ độ mang gư...</a><span class="v">▶ 85.1K</span></li><li><a href="https://www.tiktok.com/@ngulong.official/video/7571838747512261896" target="_blank" rel="noopener">Phỏng dựng lại văn hoá cổ trận xưa chưa bao giờ là dễ dàng. Từ phục t...</a><span class="v">▶ 49.4K</span></li></ul></div>
+</section>
+
+  <section>
+    <div class="chap-no">Lời cuối</div>
+    <h2 class="chap">Đạo ở trong những điều giản dị</h2>
+    <p>Xuyên suốt kênh Ngũ Long là một niềm tin trầm tĩnh: <strong>khổ hay vui phần lớn do tâm mình tạo ra, nên cũng từ tâm mình mà chuyển</strong>. Không cầu thần thánh ban phước, không đổ cho số phận, không trách đời bất công — chỉ lặng lẽ quay vào trong, bớt tham một chút, bớt sân một chút, bớt chấp một chút mỗi ngày. Người nói những điều này không tự nhận là thầy; anh tự gọi mình là một <em>“bông hoa nhỏ ham học”</em>, vừa sống vừa ngẫm vừa sửa. Cẩm nang này gom lại những điều anh ngẫm để bạn có chỗ ngồi xuống, đọc chậm, và soi lại chính mình.</p>
+    <div class="disclaimer">⚠️ <strong>Lưu ý:</strong> Đây là bản đúc kết từ 455 video TikTok ngắn.
+    Triết lý sống &amp; quan điểm tâm linh luôn mang màu sắc cá nhân, tín ngưỡng — hãy đọc với tinh thần chiêm nghiệm, đối chiếu trải nghiệm của chính mình chứ đừng tiếp nhận máy móc.
+    Để cảm trọn giọng kể, hình ảnh cổ phong &amp; ngữ cảnh, hãy bấm vào link video nguồn ở cuối mỗi chương.</p>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  Cẩm nang đúc kết từ 455 video kênh
+  <a href="https://www.tiktok.com/@ngulong.official" target="_blank" rel="noopener">@ngulong.official</a>
+  · Chỉ phục vụ học tập &amp; tham khảo.
+</div></footer>
+
+<a href="#" class="top sans" id="toTop" aria-label="Lên đầu trang">↑</a>
+<script>
+  const bar=document.getElementById('bar'), toTop=document.getElementById('toTop');
+  addEventListener('scroll',()=>{
+    const h=document.documentElement, st=h.scrollTop, sh=h.scrollHeight-h.clientHeight;
+    bar.style.width=(sh>0?(st/sh*100):0)+'%';
+    toTop.classList.toggle('show', st>600);
+  });
+</script>
+</body>
+</html>
